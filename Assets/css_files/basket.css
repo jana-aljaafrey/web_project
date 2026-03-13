@@ -1,0 +1,141 @@
+/* basics */
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    margin: 0px;
+}
+
+main {
+    flex: 1;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/* the logo code inside the header*/
+.logo {
+    font-family: "Playwrite IT Moderna", cursive;
+    font-optical-sizing: auto;
+    color: #cab19b;
+    font-weight: 350;
+    font-style: bold;
+    padding: 6px;
+}
+
+/* header codes */
+header {
+    background-color: #3a1f23;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.header_elements,
+.header_rightSide {
+    display: flex;
+}
+
+.header_elements ul {
+    display: flex;
+    list-style: none;
+    gap: 70px;
+    margin-top: 30px;
+}
+
+.header_elements li a {
+    color: #cab19b;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.header_elements {
+    margin-left: 30px;
+    gap: 750px;
+}
+
+.header_rightSide {
+    gap: 70px;
+}
+
+/* on hover on header elements */
+
+.header_elements li a:hover {
+    border-radius: 40px;
+    box-shadow: 0 0 10px #cab19b;
+}
+
+.basket_icon:hover,
+.logo:hover {
+    box-shadow: 0 0 10px #cab19b;
+    border-radius: 20px;
+}
+
+
+
+
+/* footer */
+footer {
+    background-color: #3a1f23;
+}
+
+footer hr {
+    border: none;
+    height: 30px;
+    width: 0.5px;
+    margin: auto;
+    opacity: 0.5;
+    background-color: #cab19b;
+    padding: 0px;
+    margin: 0px;
+
+}
+
+.row_one {
+    width: auto;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.row_one a {
+    color: #cab19b;
+    padding: 10px;
+}
+
+.row_tow ul {
+    width: auto;
+    padding-top: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    list-style: none;
+    padding-right: 10px;
+}
+
+footer p {
+    color: #cab19b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.instagramIcon {
+    padding: 10px;
+}
+
+/* on hover on footer */
+.row_tow img:hover, .row_one a:hover{
+    border-radius: 40px;
+    box-shadow: 0 0 10px #cab19b;
+}
