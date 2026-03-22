@@ -35,8 +35,48 @@
     <!-- ending of the header codes -->
 
     <!-- starting of main codes -->
-    <main>
+    <main class="contact_us">
+        <section class="contact_intro">
+            <h1 class="main_title">Contact Us</h1>
+            <p class="intro_text">Our services extend beyond simply serving premium coffee. We are pleased to offer exceptional service to all our customers, addressing their needs whether for inquiries, complaints, or any other reason. We are honored to serve you promptly, using all our available resources. We also value building strong relationships with you, so please don't hesitate to contact us for any reason.</p>
+            <a href="#contact_form" class="scroll_button">Start your request</a>
+        </section>
 
+        <section class="contact_form_section" id="contact_form">
+            <h2 class="section_title">Reaching Out to us:</h2>
+            <form class="contact_form">
+              <div class="field_group">
+                  <label for="fullName" class="small_label">Full name:</label>
+                  <input type="text" id="fullName" name="fullName" placeholder="Enter your full name..." required>
+              </div>
+              <div class="field_group">
+                  <label for="phoneNumber" class="small_label">Phone number:</label>
+                  <input type="tel" id="phoneNumber" name="PhoneNumber" placeholder="Enter your phone number..." required>
+              </div>
+              <div class="field_group">
+                  <label for="serviceType" class="small_label">Type of service:</label>
+                  <div class="select_wrapper">
+                      <select id="serviceType" name="serviceType" required>
+                       <option value="">Select service</option>
+                       <option>Complaint</option>
+                       <option>Suggestion</option>
+                       <option>Inquiry</option>
+                       <option>Support request</option>
+                      </select>
+                  </div>
+              </div>
+              <div class="field_group">
+                  <label for="messageTitle" class="small_label">Message title:</label>
+                  <input type="text" id="messageTitle" name="messageTitle" placeholder="Enter your message title..." required>
+              </div>
+              <div class="field_group">
+                  <label for="customerMessage" class="small_label">Message content:</label>
+                  <textarea id="customerMessage" name="customerMessage" placeholder="Write your message here..." required></textarea>
+              </div>
+
+              <button type="submit" class="send_button">Send</button>
+            </form>
+        </section>
     </main>
     <!-- ending of main codes -->
 
