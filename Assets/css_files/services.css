@@ -20,6 +20,25 @@ ul {
     list-style: none;
 }
 
+
+button {
+    border: none;
+    background-color: #3a1f23;
+    color: #cab19b;
+    padding: 17px;
+    border-radius: 15px;
+    font-size: 19px;
+}
+
+
+/* button on hover (about us part) */
+button:hover {
+    background-color: #7a5051;
+    transform: scale(1.1);
+    transition: 0.2s;
+    color: #cab19b;
+}
+
 /* the logo code inside the header*/
 .logo {
     font-family: "Playwrite IT Moderna", cursive;
