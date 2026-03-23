@@ -165,17 +165,15 @@ footer p {
 }
 .contact_intro {
   min-height: 70vh;
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-   url("../images/coffeepc.jpg") center/cover no-repeat;
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+              url("../images/coffeepc.jpg") center/cover no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   color: var(--white);
-  padding: 20px;
-  padding-bottom: 80px;
-  gap: 20px;
+  padding: 40px 20px 120px;
 }
 .main_title {
   font-size: 5rem;
@@ -184,8 +182,11 @@ footer p {
 .intro_text {
   max-width: 850px;
   line-height: 1.4;
-  font-size: 1.3rem;
-   font-family: 'Playfair Display', serif;
+  font-size: 1.4rem;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  margin: 0 auto;
+  word-spacing: normal;
    }
 .scroll_button {
   background: var(--secondary-color);
@@ -193,8 +194,8 @@ footer p {
   padding:12px 25px;
   border-radius: 8px;
   text-decoration: none;
-  transition: 0.3s;
-  position: relative;
+  display: inline-block;
+  margin-top: 30px;
  }
  .scroll_button:hover {
   background: var(--main-color);
@@ -215,8 +216,7 @@ footer p {
   margin: auto;
   background: var(--white);
   padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  border-radius: 8px;
 }
 .field_group {
   margin-bottom: 20px;
@@ -232,14 +232,12 @@ input, textarea, select {
   border: 2px solid #ddd;
   border-radius: 8px;
   outline: none;
-  transition: 0.3s;
   font-family: 'Poppins', sans-serif;
 }
 input:focus,
 textarea:focus,
 select:focus {
   border-color: var(--main-color);
-  box-shadow: 0 0 5px var(--main-color);
 }
 .send_button {
   width: 100%;
@@ -249,12 +247,10 @@ select:focus {
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  transition: 0.3s;
 }
 .send_button:hover {
   background: #4a3535;
 }
-input:focus,
-textarea:focus {
-  transform: scale(1.02);
+.contact_form textarea {
+  resize: none;
 }
