@@ -147,13 +147,43 @@ footer p {
     justify-content: center;
     align-items: center;
 }
+
 .instagramIcon {
     padding: 10px;
 }
 
 /* on hover on footer */
-.row_tow img:hover, .row_one a:hover{
+.row_tow img:hover,
+.row_one a:hover {
     border-radius: 40px;
     box-shadow: 0 0 10px #cab19b;
 }
 
+
+/* <!-- starting of the title and items part (Jana) --> */
+
+/* <!-- ending of the title and items part (Jana) --> */
+
+
+
+/* <!-- starting of the drop list (Zahrah) --> */
+
+/* <!-- ending of the drop list (Zahrah) --> */
+
+
+
+/* <!-- reservation info, date, time and comments (Roba) --> */
+
+/* <!-- reservation info, date, time and comments (Roba) --> */
+
+
+
+/* <!-- starting of payment infos and total price (Maria) --> */
+
+/* <!-- ending of payment infos and total price (Maria) --> */
+
+
+
+/* <!-- starting pay button (Zahrah) --> */
+
+/* <!-- ending pay button (Zahrah) --> */
