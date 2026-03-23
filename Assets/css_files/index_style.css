@@ -52,6 +52,9 @@ header {
     background-color: #3a1f23;
     padding: 0px;
     margin: 0px;
+    position: sticky;
+top: 0px;
+z-index: 1000;
 }
 
 
@@ -163,14 +166,16 @@ footer p {
 /* upperSide, the nav and about us*/
 .upperSide {
     display: flex;
-    background-image: linear-gradient(#7a505199), url("../images/Cafe_Interior.jpg");
+    background-image: linear-gradient(#7a505199, #7a505199), url("../images/landspace_interior_view.jpg");
     background-size: cover;
     background-position: center;
+    height: 600px ;
+    align-items: flex-start;
 }
 
-.upperSide nav {
+/* .upperSide nav {
     display: inline;
-}
+} */
 
 /* about us part */
 .about_us {
@@ -183,7 +188,7 @@ footer p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: 77px;
+    margin-right: 250px;
 }
 
 .about_us_title {
@@ -195,6 +200,8 @@ footer p {
     font-family: "Playwrite IT Moderna", cursive;
     border-radius: 30px;
     font-size: 25px;
+    margin-top: 200px;
+    margin-bottom: 60px;
 }
 
 .about_us_text {
@@ -203,12 +210,13 @@ footer p {
     background-color: #cab19b;
     width: fit-content;
     padding: 10px 15px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family:Georgia, 'Times New Roman', Times, serif;
     border-radius: 30px;
     line-height: 35px;
-    width: 390px;
+    width: 800px;
     font-size: 18px;
     letter-spacing: 1px;
+    margin-bottom: 80px;
 }
 
 button {
@@ -219,9 +227,10 @@ button {
     border-radius: 15px;
     font-size: 19px;
 }
-.about_us button{
-    border: 2px solid #cab19b ;
-     /* box-shadow: 0px 0px 80px #cab19b,  0px 0px 40px #cab19b,  0px 0px 20px #cab19b;  */
+
+.about_us button {
+    border: 2px solid #cab19b;
+    /* box-shadow: 0px 0px 80px #cab19b,  0px 0px 40px #cab19b,  0px 0px 20px #cab19b;  */
 
 }
 
@@ -241,10 +250,11 @@ button:hover {
     border: 3px solid #7a5051;
     box-shadow: 0 0 40px #3a1f23, 0 0 20px #3a1f2350;
     border-radius: 65px;
-    position: sticky;
     margin-top: 20px;
     margin-left: 25px;
-    position: fixed;
+    position: sticky;
+    z-index: 1000;
+    top: 40px;
 }
 
 .page_nav a {
@@ -256,6 +266,7 @@ button:hover {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     white-space: nowrap;
     font-weight: bold;
+    
 
 }
 
@@ -285,8 +296,9 @@ button:hover {
 /* top selling part */
 
 .our_products {
-    padding-top: 70px;
-    padding-left: 135px;
+    padding-top: 30px;
+    /* padding-left: 135px; */
+    margin-top: 40px;
     /* display: flex;
     flex-direction: column;
     justify-content: center;
@@ -294,9 +306,9 @@ button:hover {
 }
 
 
-.our_products h3 {
+/*.our_products*/ h3 {
     justify-content: center;
-    margin-left: 250px;
+    /* margin-left: 250px; */
     padding: 30px;
     margin-bottom: 55px;
     text-align: center;
@@ -313,12 +325,102 @@ button:hover {
     gap: 70px;
     justify-content: center;
     align-items: center;
-    margin-right: 140px;
+    /* margin-right: 140px; */
 }
 
-.our_products button {
-    margin: 60px 0px 60px 565px;
-    font-size: 25px;
+.our_products button, #our_partners_part button {
+    margin: 40px 0px 60px 0px;
+    font-size: 21px;
+    width: 250px;
 }
 
-.product_card {}
+.product_card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.product_card img {
+    border-radius: 20px;
+}
+
+.product_card p {
+    text-align: center;
+    color: #3a1f23;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.top_selling_part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* card on hover */
+.product_card:hover {
+    transform: scale(1.03);
+    transform: 2s;
+}
+
+/* locations section */
+
+#locations_part {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    padding-top: 40px;
+    gap: 10px;
+    padding-bottom: 40px;
+    margin-bottom: 30px;
+}
+
+.location a{
+    display: flex;
+    color: #3a1f23;
+     text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+        padding: 5px 15px;
+        margin-bottom: 20px;
+        border-radius: 15px;
+}
+
+.location a:hover{
+    background-color: #cab19b50;
+    transform: scale(1.004);
+    transition: 0.1s;
+    box-shadow: 0 0 40px #3a1f2350, 0 0 30px #3a1f2350, 0 0 20px #3a1f2350;
+}
+
+/* landspace photo */
+.landspace_photo {
+    border: 3px solid #3a1f23;
+}
+
+/* partners part  */
+#our_partners_part{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 0px 40px 0px;
+}
+.partners {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 100px;
+    margin: 40px 0px 100px 0px;
+}
+
+.partners a img{
+    border-radius: 18px;
+}
+.partners a:hover {
+    transform: scale(1.08);
+    transition: 0.1s;
+}
