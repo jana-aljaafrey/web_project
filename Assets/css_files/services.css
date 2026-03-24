@@ -220,3 +220,46 @@ footer p {
     border-radius: 20px;
  
 }
+
+/* services sections */
+
+.service_section {
+    height: 550px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+.party {
+    background-image: linear-gradient(rgba(58, 31, 35, 0.7), rgba(58, 31, 35, 0.5)), url("../images/Graduation_Party.jpg");
+}
+
+.table {
+    background-image: linear-gradient(rgba(58, 31, 35, 0.7), rgba(58, 31, 35, 0.5)), url("../images/Outdoor_Sessions.jpg");
+}
+
+.custom {
+    background-image: linear-gradient(rgba(58, 31, 35, 0.7), rgba(58, 31, 35, 0.5)), url("../images/Top_View.jpg");
+}
+
+.overlay {
+    color: white;
+    text-align: center;
+    padding-top: 180px;
+}
+
+.overlay h1 {
+    font-size: 55px;
+}
+
+.overlay p {
+    font-size: 22px;
+}
+
+.overlay p {
+    width: 60%;
+    margin: auto;
+    margin-top: 20px;
+    line-height: 1.6;
+}
