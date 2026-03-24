@@ -316,7 +316,7 @@ button:hover {
     background-color: #cab19b99;
     width: 700px;
     font-family: "Playwrite IT Moderna", cursive;
-    border-radius: 19px;
+    border-radius: 25px;
     font-size: 22px;
 }
 
@@ -396,6 +396,7 @@ button:hover {
     transform: scale(1.004);
     transition: 0.1s;
     box-shadow: 0 0 40px #3a1f2350, 0 0 30px #3a1f2350, 0 0 20px #3a1f2350;
+  
 }
 
 /* landspace photo */
