@@ -239,6 +239,7 @@ h1 {
 
 .photo img {
     border-radius: 25px;
+    border: 1.8px solid #3a1f23;
 }
 
 .quantity_control img {

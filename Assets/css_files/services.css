@@ -70,7 +70,7 @@ header {
     list-style: none;
     gap: 40px;
     margin-top: 30px;
-    
+
 }
 
 .header_elements li a {
@@ -253,13 +253,28 @@ footer p {
 .overlay {
     color: white;
     text-align: center;
-    padding-top: 180px;
+    padding-top: 40px;
 
 }
 
-.overlay h1 {
-    font-size: 55px;
+.overlay .one_word_title {
+    font-size: 38px;
     font-family: "Playwrite IT Moderna", cursive;
+    background-color: #3a1f23BB;
+    margin-left: 650px;
+    margin-right: 650px;
+    border-radius: 25px;
+    margin-bottom: 50px;
+}
+
+h1 {
+    font-size: 38px;
+    font-family: "Playwrite IT Moderna", cursive;
+    background-color: #3a1f23BB;
+    margin-left: 500px;
+    margin-right: 500px;
+    border-radius: 25px;
+    margin-bottom: 50px;
 }
 
 .overlay p {
@@ -271,7 +286,7 @@ footer p {
     line-height: 1.6;
     padding: 20px;
     border-radius: 20px;
-    margin-bottom: 25px;
+    margin-bottom: 65px;
 }
 
 hr {
