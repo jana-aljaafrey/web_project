@@ -52,6 +52,9 @@ header {
     background-color: #3a1f23;
     padding: 0px;
     margin: 0px;
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
 }
 
 
@@ -63,8 +66,9 @@ header {
 .header_elements ul {
     display: flex;
     list-style: none;
-    gap: 70px;
+    gap: 40px;
     margin-top: 30px;
+    
 }
 
 .header_elements li a {
@@ -75,7 +79,8 @@ header {
 
 .header_elements {
     margin-left: 30px;
-    gap: 750px;
+    gap: 650px;
+    margin-top: 10px;
 }
 
 .header_rightSide {
@@ -156,13 +161,6 @@ footer p {
     box-shadow: 0 0 10px #cab19b;
 }
 /* on main*/
-:root {
-  --main-color: #3a1f23;
-  --secondary-color: #cab19b;
-  --bg-color: #f7f3ef;
-  --text-color: #333;
-  --white: #fff;
-}
 .contact_intro {
   min-height: 70vh;
   background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
@@ -172,7 +170,7 @@ footer p {
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: var(--white);
+  color: white;
   padding: 40px 20px 120px;
 }
 .main_title {
@@ -189,8 +187,8 @@ footer p {
   word-spacing: normal;
    }
 .scroll_button {
-  background: var(--secondary-color);
-  color: var(--text-color);
+  background: #cab19b;
+  color: #333;
   padding:12px 25px;
   border-radius: 8px;
   text-decoration: none;
@@ -198,23 +196,23 @@ footer p {
   margin-top: 30px;
  }
  .scroll_button:hover {
-  background: var(--main-color);
-  color: var(--white);
+  background: #3a1f23;
+  color: white;
  }
 .contact_form_section {
   padding: 50px 20px;
-  background: var(--bg-color);
+  background: #f7f3ef;
 }
 .section_title {
   text-align: center;
-  color: var(--main-color);
+  color: #3a1f23;
   font-size: 2.2rem;
   margin-bottom: 40px;
 }
 .contact_form {
   max-width: 600px;
   margin: auto;
-  background: var(--white);
+  background: white;
   padding: 30px;
   border-radius: 8px;
 }
@@ -237,16 +235,18 @@ input, textarea, select {
 input:focus,
 textarea:focus,
 select:focus {
-  border-color: var(--main-color);
+  border-color: #3a1f23;
 }
 .send_button {
-  width: 100%;
-  padding: 12px;
-  background: var(--main-color);
-  color: var(--white);
+  width: auto;
+  padding: 12px 25px;
+  background: #3a1f23;
+  color: white;
   border: none;
   border-radius: 8px;
   cursor: pointer;
+  display: block;
+  margin: 20px auto 0;
 }
 .send_button:hover {
   background: #4a3535;

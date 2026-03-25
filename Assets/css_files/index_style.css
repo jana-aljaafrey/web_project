@@ -66,8 +66,9 @@ header {
 .header_elements ul {
     display: flex;
     list-style: none;
-    gap: 70px;
+    gap: 40px;
     margin-top: 30px;
+    
 }
 
 .header_elements li a {
@@ -78,7 +79,8 @@ header {
 
 .header_elements {
     margin-left: 30px;
-    gap: 750px;
+    gap: 650px;
+    margin-top: 10px;
 }
 
 .header_rightSide {
@@ -188,7 +190,8 @@ footer p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-right: 250px;
+    /* margin-right: 250px; */
+    margin-left: 100px;
 }
 
 .about_us_title {
@@ -250,11 +253,11 @@ button:hover {
     border: 3px solid #7a5051;
     box-shadow: 0 0 40px #3a1f23, 0 0 20px #3a1f2350;
     border-radius: 65px;
-    margin-top: 20px;
+    margin-top: 40px;
     margin-left: 25px;
-    position: sticky;
+    position: fixed;
     z-index: 1000;
-    top: 40px;
+    /* top: 40px; */
 }
 
 .page_nav a {

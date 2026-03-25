@@ -54,6 +54,9 @@ header {
     background-color: #3a1f23;
     padding: 0px;
     margin: 0px;
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
 }
 
 
@@ -65,8 +68,9 @@ header {
 .header_elements ul {
     display: flex;
     list-style: none;
-    gap: 70px;
+    gap: 40px;
     margin-top: 30px;
+    
 }
 
 .header_elements li a {
@@ -77,7 +81,8 @@ header {
 
 .header_elements {
     margin-left: 30px;
-    gap: 750px;
+    gap: 650px;
+    margin-top: 10px;
 }
 
 .header_rightSide {
@@ -254,12 +259,13 @@ footer p {
 
 .overlay h1 {
     font-size: 55px;
+    font-family: "Playwrite IT Moderna", cursive;
 }
 
 .overlay p {
     font-size: 22px;
     background-color: #3a1f23BB;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     width: 800px;
     margin: auto;
     line-height: 1.6;
