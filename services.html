@@ -22,11 +22,13 @@
                 </a>
                 <div class="header_rightSide">
                     <ul>
+                        <li><a href="index.html">Home</li></a>
                         <li><a href="menu.html">Menu</a></li>
                         <li><a href="services.html">Services</a></li>
                         <li><a href="contact_us.html">Contact Us</a></li>
                     </ul>
-                    <a href="basket.html"><img src="Assets/images/emptyBasket.png" width="75" alt="basket_icon"></a>
+                    <a href="basket.html"><img src="Assets/images/emptyBasket.png" width="75" alt="basket_icon"
+                            class="basket_icon"></a>
                 </div>
             </div>
         </nav>
@@ -35,25 +37,62 @@
 
     <!-- starting of main codes -->
     <main>
-          <nav class="page_nav"> <!--nav section without who are we part-->
-                <ul>
-                    <li>
-                        <a href="">
-                            <img src="Assets/images/productsIcon.png" width="55" alt="Our Products Icon">
-                            Our products</a>
-                    </li>
-                    <li class="location_nav">
-                        <a href="">
-                            <img src="Assets/images/locationIcon.png" width="45" height="50"
-                                alt="Locations Icon">locations</a>
-                    </li>
-                    <li>
-                        <a href=""><img src="Assets/images/partnersIcon.png" width="55" alt="Locations Icon">Our
-                            Partners</a>
-                    </li>
-                </ul>
+        <nav class="page_nav">
+            <ul>
+                <li>
+                    <a href="#events">
+                        <img src="Assets/images/parties_icon.png" width="45" alt="Events icon">
+                        parties
+                    </a>
+                </li>
 
-            </nav>
+                <li>
+                    <a href="#table">
+                        <img src="Assets/images/reservation_icon.png" width="45" alt="Table reservation icon">
+                        Reservation
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#custom">
+                        <img src="Assets/images/customize_icon.png" width="45" alt="Custom order icon">
+                        Customise Order
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <section id="events" class="service_section party">
+            <div class="overlay">
+                <h1 class="one_word_title">Parties</h1>
+                <p>Celebrate your special moments in a warm and elegant café settingn
+                    Whether it's a birthday, graduation, or a small gathering, enjoy a unique experience
+                    with your loved ones and create unforgettable memories.
+                </p>
+                <button>Reserve Now</button>
+            </div>
+        </section>
+        <hr>
+        <section id="table" class="service_section table">
+            <div class="overlay">
+                <h1>Table Reservation</h1>
+                <p>Reserve your table and enjoy a relaxing time in our cozy café.
+                    Perfect for catching up with friends or spending quality time with family
+                    while enjoying your favorite drinks.
+                </p>
+                <button>Book Now</button>
+            </div>
+        </section>
+        <hr>
+        <section id="custom" class="service_section custom">
+            <div class="overlay">
+                <h1>Customise Order</h1>
+                <p>We provide personalized cake orders designed to match your celebration.
+                    Choose your preferred flavors and style, and let us create something special
+                    just for you.
+                </p>
+                <button>Order Now</button>
+            </div>
+        </section>
     </main>
     <!-- ending of main codes -->
 

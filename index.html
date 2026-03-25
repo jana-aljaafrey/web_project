@@ -22,9 +22,11 @@
                 </a>
                 <div class="header_rightSide">
                     <ul>
+                        <li><a href="index.html">Home</li></a>
                         <li><a href="menu.html">Menu</a></li>
                         <li><a href="services.html">Services</a></li>
                         <li><a href="contact_us.html">Contact Us</a></li>
+
                     </ul>
                     <a href="basket.html"><img src="Assets/images/emptyBasket.png" width="75" alt="basket_icon"
                             class="basket_icon"></a>
@@ -37,21 +39,22 @@
     <!-- starting of main codes -->
     <main>
         <!--starting of the nav and who are we section-->
-        <section class="upperSide"> 
+        <section class="upperSide">
             <nav class="page_nav"> <!--nav section without who are we part-->
                 <ul>
                     <li>
-                        <a href="">
+                        <a href="#top_selling">
                             <img src="Assets/images/productsIcon.png" width="55" alt="Our Products Icon">
-                            Our products</a>
+                            Top Sellings</a>
                     </li>
                     <li class="location_nav">
-                        <a href="">
-                            <img src="Assets/images/locationIcon.png" width="45" height="50"
-                                alt="Locations Icon">locations</a>
+                        <a href="#locations_part">
+                            <img src="Assets/images/locationIcon.png" width="45" height="50" alt="Locations Icon">Our
+                            locations</a>
                     </li>
                     <li>
-                        <a href=""><img src="Assets/images/partnersIcon.png" width="55" alt="Locations Icon">Our
+                        <a href="#our_partners_part"><img src="Assets/images/partnersIcon.png" width="55"
+                                alt="Locations Icon">Our
                             Partners</a>
                     </li>
                 </ul>
@@ -59,23 +62,131 @@
 
             <section class="about_us"> <!--who are we section without the nav-->
                 <h1 class="about_us_title">How are we?</h1>
-                <p class="about_us_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ducimus
-                    voluptatum libero excepturi
-                    maxime odit incidunt impedit vel fugit eaque.</p>
-                <a href=""><button>Read More</button></a>
+                <p class="about_us_text">We are a coffee shop that came to offer a feeling
+                    before offering products. Because we believe that a sip should deliver
+                    warmth to the heart before the lips. We created a coffee shop that provides
+                    customers with comfort and gives them calm in a space full of inspiration.
+                    <br><b>Dive with us into warm feelings like no other!</b>
+                </p>
+                <a href="services.html"><button>Our Services</button></a>
             </section>
         </section>
         <!--ending of the nav and how are we section-->
 
-        <!-- our products part (display some products from the menu) -->
-        <section class="our_products">
-        <h3>Our Best Selling Products</h3>
-        <div class="products_row">
-            <div class="product_card">
-                <img src="">
-            </div>
-        </div>
+        <!--Starting of our products part (display some products from the menu) -->
+        <section class="our_products" id="top_selling">
+            <article class="top_selling_part">
+                <h3>Top Sellings</h3>
+                <div class="products_row">
+                    <!-- latte card -->
+                    <article class="product_card">
+                        <img src="Assets/images/Latte.jpg" alt="Latte Photo" width="270">
+                        <p>Hot Latte</p>
+                    </article>
+                    <!-- Cold Brew card -->
+                    <article class="product_card">
+                        <img src="Assets/images/Cold_Brew.jpg" alt="Cold Brew" width="270">
+                        <p>Cold Brew</p>
+                    </article>
+                    <!-- Brownies product_card  -->
+                    <article class="product_card">
+                        <img src="Assets/images/Brownies.jpg" alt="Brownies" width="270">
+                        <p>Brownies</p>
+                    </article>
+                </div>
+                <a href="menu.html"><button>Menu</button></a>
+            </article>
+
         </section>
+        <!--ending of our products part (display some products from the menu) -->
+
+        <!-- starting of the promotion photo -->
+        <section>
+            <img src="Assets/images/lanscape_Top_View.jpg" alt="top view for some of our products photo"
+                class="landspace_photo" width="1516">
+        </section>
+        <!-- ending of the promotion photo -->
+
+        <!-- starting of location section -->
+        <section id="locations_part">
+            <h3>Our Locations</h3>
+            <ul>
+                <!-- branch 1 -->
+                <li>
+                    <div class="location">
+                        <a href="https://maps.app.goo.gl/6eoNpW36X8uqYU6Y7?g_st=atm" target="_blank">
+                            <p>Prince Mutaib Road, Hajer District, Dhahran 34254, Saudi Arabia.</p>
+
+                            <img src="Assets/images/locationIcon.png" width="45" height="50" alt="Locations Icon">
+                        </a>
+                    </div>
+                </li>
+                <!-- branch 2 -->
+                <li>
+                    <div class="location">
+
+                        <a href="https://maps.app.goo.gl/V3GsMA3R6rT7eAEk6?g_st=atm" target="_blank">
+                            <p>King Saud bin Abdulaziz Road, Al-Safa District, Al Khobar 34222, Saudi Arabia.</p>
+                            <img src="Assets/images/locationIcon.png" width="45" height="50" alt="Locations Icon">
+                        </a>
+                    </div>
+                </li>
+                <!-- branch 3 -->
+                <li>
+                    <div class="location">
+
+                        <a href="https://maps.app.goo.gl/Y1hRpu74494X4wZs8" target="_blank">
+                            <p>Abu Bakr Al-Siddiq Street, Al-Manar District, Dammam 32274, Saudi Arabia.</p>
+                            <img src="Assets/images/locationIcon.png" width="45" height="50" alt="Locations Icon">
+                        </a>
+                    </div>
+                </li>
+            </ul>
+
+
+        </section>
+        <!-- ending of location section -->
+
+        <!-- starting of the promotion photo -->
+        <section>
+            <img src="Assets/images/center_view.jpg" alt="top view for some of our products photo"
+                class="landspace_photo" width="1516">
+        </section>
+        <!-- ending of the promotion photo -->
+
+        <!-- starting of our partners section -->
+        <section id="our_partners_part">
+            <h3>Our Partners</h3>
+            <div class="partners">
+                <a href="https://www.brew92.com/" target="_blank"><img src="Assets/images/brew92.jpeg" alt="Brew92 Logo"
+                        width="100"></a>
+                <a href="https://www.alpro.com/" target="_blank"><img src="Assets/images/alpro.jpeg" alt="Alpro Logo"
+                        width="100"></a>
+                <a href="https://www.godiva.com/?srsltid=AfmBOortO8HMju6OIU7pU33_aifQA7X7T_EXmXRoOXrXpF8uoaUDvYiL"
+                    target="_blank"><img src="Assets/images/godiva.jpeg" alt="Godiva Logo" width="100"></a>
+                <a href="https://elixirbunn.com/?srsltid=AfmBOor4OHYDm0cG6Vy7xtxyOaDrxNPNQGnSL9O27KLZX40R_I6QOiA7"
+                    target="_blank"><img src="Assets/images/elixir.jpeg" alt="Elixir Bunn Coffee Logo" width="100"></a>
+                <a href="https://www.dotbakery.sa/" target="_blank"><img src="Assets/images/Dot.png"
+                        alt="Dot Bakery Logo" width="100"></a>
+                <a href="https://patchi.com/ksa-riyadh/ar" target="_blank"><img src="Assets/images/patchi.png"
+                        alt="Patchi Logo" width="100"></a>
+                <a href="https://8ozcafe.com/" target="_blank"><img src="Assets/images/8oz.png" alt="8oz Coffee Logo"
+                        width="100"></a>
+                <a href="https://barns.com.sa/en" target="_blank"><img src="Assets/images/Barns.jpeg"
+                        alt="Barn's cafe Logo" width="100"></a>
+                <a href="https://www.almarai.com/en?gad_source=1&gad_campaignid=22719098113&gbraid=0aaaaao_exp_sjuhswxzuhm2blucq1fzji&gclid=cj0kcqjwpv7nbhczarisadkifwziexvgjdnx8ysxoyh4kqgzc8up0vj2xz6xrp9r1silyxyle7swhbyaallgealw_wcb"
+                    target="_blank"><img src="Assets/images/almarai.png" alt="Almarai Logo" width="100"></a>
+                <a href="https://www.oatly.com/" target="_blank"><img src="Assets/images/oatly.jpeg" alt="Oatly Logo"
+                        width="100"></a>
+                <a href="https://umqcoffee.com/ar/?srsltid=AfmBOoprquPPBA16IWPEi-8TXDTSMDYU_RizTZI85vBh_s_uw6XALzHu"
+                    target="_blank"><img src="Assets/images/umq.jpeg" alt="Umq Logo" width="100"></a>
+                <a href="https://halfm.sa/" target="_blank"><img src="Assets/images/HalfM.png" alt="Half Million Logo"
+                        width="100"></a>
+            </div>
+            <a href="contact_us.html"><button>Contact Us</button></a>
+        </section>
+        <!-- ending of our partners section -->
+
     </main>
     <!-- ending of main codes -->
 
