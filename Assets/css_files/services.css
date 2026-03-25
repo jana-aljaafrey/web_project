@@ -148,12 +148,14 @@ footer p {
     justify-content: center;
     align-items: center;
 }
+
 .instagramIcon {
     padding: 10px;
 }
 
 /* on hover on footer */
-.row_tow img:hover, .row_one a:hover{
+.row_tow img:hover,
+.row_one a:hover {
     border-radius: 40px;
     box-shadow: 0 0 10px #cab19b;
 }
@@ -179,7 +181,7 @@ footer p {
     background-color: #cab19b;
     width: 200px;
     border: 3px solid #7a5051;
-    box-shadow: 0 0 40px #3a1f23,  0 0 20px #3a1f2350;
+    box-shadow: 0 0 40px #3a1f23, 0 0 20px #3a1f2350;
     border-radius: 65px;
     position: sticky;
     margin-top: 20px;
@@ -209,14 +211,67 @@ footer p {
     padding: 20px 30px;
 }
 
-.location_nav{
+.location_nav {
     padding: 0;
     margin-right: 33px;
 }
 
-.page_nav li:hover{
-    box-shadow: 0 0 40px #3a1f2350,  0 0 30px #3a1f2350,  0 0 20px #3a1f2350;
+.page_nav li:hover {
+    box-shadow: 0 0 40px #3a1f2350, 0 0 30px #3a1f2350, 0 0 20px #3a1f2350;
     /* box-shadow: 0 0 20px #3a1f2350; */
     border-radius: 20px;
- 
+
+}
+
+/* services sections */
+
+.service_section {
+    height: 550px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+.party {
+    background-image: linear-gradient(rgba(58, 31, 35, 0.7), rgba(58, 31, 35, 0.5)), url("../images/Graduation_Party.jpg");
+}
+
+.table {
+    background-image: linear-gradient(rgba(58, 31, 35, 0.7), rgba(58, 31, 35, 0.5)), url("../images/Outdoor_Sessions.jpg");
+}
+
+.custom {
+    background-image: linear-gradient(rgba(58, 31, 35, 0.7), rgba(58, 31, 35, 0.5)), url("../images/Top_View.jpg");
+}
+
+.overlay {
+    color: white;
+    text-align: center;
+    padding-top: 180px;
+
+}
+
+.overlay h1 {
+    font-size: 55px;
+}
+
+.overlay p {
+    font-size: 22px;
+    background-color: #3a1f23BB;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 800px;
+    margin: auto;
+    line-height: 1.6;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 25px;
+}
+
+hr {
+    border: none;
+    background-color: #3a1f23;
+    height: 15px;
+    padding: 0px;
+    margin: 0px;
 }
