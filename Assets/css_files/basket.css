@@ -229,7 +229,7 @@ h1 {
 }
 
 .price::after {
-    content: "$";
+    content: "⃁";
 }
 
 .garbige {
