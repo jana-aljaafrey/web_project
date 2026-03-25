@@ -41,7 +41,6 @@
             <p class="intro_text">Our services extend beyond simply serving premium coffee. We are pleased to offer exceptional service to all our customers and address their needs whether they are related to inquiries or any other reason. We are honored to serve you promptly while using all our available resources. In addition we value building strong relationships with you , so please don't hesitate to contact us for any reason.</p>
             <a href="#contact_form" class="scroll_button">Start your request</a>
         </section>
-
         <section class="contact_form_section" id="contact_form">
             <h2 class="section_title">Reaching Out to us:</h2>
             <form class="contact_form">
@@ -51,7 +50,7 @@
               </div>
               <div class="field_group">
                   <label for="phoneNumber" class="small_label">Phone number:</label>
-                  <input type="tel" id="phoneNumber" name="PhoneNumber" placeholder="Enter your phone number..." required>
+                  <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="05xxxxxxxx" pattern="05[0-9]{8}" inputmode="numeric" maxlength="10" oninput="this.value = this.value.replace(/[^0-9]/g, '')" required>
               </div>
               <div class="field_group">
                   <label for="serviceType" class="small_label">Type of service:</label>
@@ -73,7 +72,6 @@
                   <label for="customerMessage" class="small_label">Message content:</label>
                   <textarea id="customerMessage" name="customerMessage" placeholder="Write your message here..." required></textarea>
               </div>
-
               <button type="submit" class="send_button">Send</button>
             </form>
         </section>
