@@ -28,6 +28,9 @@ button {
     padding: 17px;
     border-radius: 15px;
     font-size: 19px;
+    display: block;
+    margin: auto;
+    margin-bottom: 30px;
 }
 
 /* button on hover (about us part) */
@@ -275,6 +278,7 @@ h1 {
 }
 
 label {
+    font-weight: bold;
     font-size: 20px;
     color: #3a1f23;
     display: block;
@@ -289,6 +293,7 @@ select {
     border-radius: 10px;
     background-color: #cab19b;
     color: #3a1f23;
+
 }
 /* <!-- ending of the drop list (Zahrah) --> */
 
@@ -355,14 +360,6 @@ select {
 
 
 /* <!-- starting pay button (Zahrah) --> */
-button {
-    background-color: #7a5051;
-    color: white;
-    padding: 10px 20px;
-    border: none;
 
-    display: block;
-    margin: 20px auto;   س
-}
 
 /* <!-- ending pay button (Zahrah) --> */
