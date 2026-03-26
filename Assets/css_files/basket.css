@@ -275,6 +275,7 @@ h1 {
 }
 
 label {
+    font-weight: bold;
     font-size: 20px;
     color: #3a1f23;
     display: block;
@@ -289,6 +290,7 @@ select {
     border-radius: 10px;
     background-color: #cab19b;
     color: #3a1f23;
+
 }
 /* <!-- ending of the drop list (Zahrah) --> */
 
@@ -362,7 +364,7 @@ button {
     border: none;
 
     display: block;
-    margin: 20px auto;   س
+    margin: 20px auto;   
 }
 
 /* <!-- ending pay button (Zahrah) --> */

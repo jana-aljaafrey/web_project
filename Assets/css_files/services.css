@@ -253,8 +253,7 @@ footer p {
 .overlay {
     color: white;
     text-align: center;
-    padding-top: 40px;
-
+     padding-top: 80px;
 }
 
 .overlay .one_word_title {
@@ -295,4 +294,10 @@ hr {
     height: 15px;
     padding: 0px;
     margin: 0px;
+}
+
+.section_space {
+    height: 80px;
+    margin-top: -80px;
+    visibility: hidden;
 }
