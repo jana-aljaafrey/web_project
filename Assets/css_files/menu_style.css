@@ -69,7 +69,7 @@ header {
     list-style: none;
     gap: 40px;
     margin-top: 30px;
-    
+
 }
 
 .header_elements li a {
@@ -152,105 +152,105 @@ footer p {
     justify-content: center;
     align-items: center;
 }
+
 .instagramIcon {
     padding: 10px;
 }
 
 /* on hover on footer */
-.row_tow img:hover, .row_one a:hover{
+.row_tow img:hover,
+.row_one a:hover {
     border-radius: 40px;
     box-shadow: 0 0 10px #cab19b;
 }
 
 
-.menu_card {
-    background-color: #cab19b;
-    border-radius: 8px;
-    padding: 15px;
+/* menu section */
+
+h1 {
     text-align: center;
-    transition: transform 0.3s ease;
-    box-shadow: 0 4px 15px rgba( 0, 0, 0, 0 ,1);
+    color: #3a1f23;
+    font-family: "Playwrite IT Moderna", cursive;
+    font-size: 30px;
+    margin-bottom: 30px;
 }
 
-.menu_card :hover {
-    transform: translateY(-5px);
-    
+h2 {
+    text-align: left;
+    color: #3a1f23;
+    font-family: "Playwrite IT Moderna", cursive;
+    font-size: 20px;
+    margin-bottom: 25px;
 }
 
-.menu_card:hover img {
-    transform: scale(2);
-    transition: transform 0.5s ease;
+.card_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.menu_card img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 8px;
+.priceAndLogo {
+    display: flex;
+    gap: 130px;
 }
 
 .name {
-    font-size: 15px;
-    font-weight: bold;
-    margin: 4.8px 0;
+    color: #3a1f23;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+
 }
 
 .price {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 4.8px;
-    font-weight: bold;
-    font-size: 13px;
+    font-size: 18;
+    color: #3a1f23;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.baskets {
-    border: none;
-    border-radius: 50%;
-    padding: 4.8px;
-    cursor: pointer;
-    font-size: 10px;
-    color: aliceblue;
-    background-color: #cab19b;
-    transition: background 0.5s;
+.price::after {
+    content: "⃁";
 }
 
-.basket:hover {
-    
-    background-color: #3a1f23;
+.product_img {
+    border-radius: 25px;
+    width: 100%;
 }
 
-
-/* Grid */
-.menu_section {
+.products {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(180px, 1fr));
-    gap: 20px;
-    padding: 20px;
-    text-align: left;
-    margin: 24px 0 14.5px 0;
-    font-size: 28px;
-    color: #3a1f23;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-left: 20px;
 }
 
-.menu_title {
-    text-align: center;
-    margin-top: 16px;
-    font-size: 24px;
-    color: #3a1f23;
+.hot_drinks, .cold_drinks, .desserts {
+    margin-left: 50px;
 }
 
-#desserts {
-    color: #3a1f23;
-    font-size: 20px;
-    text-align: left;
-    margin-bottom: 24px;
+.product_card{
+    width: 250px;
+    border-radius: 25px;
+    border: 2px solid #3a1f23;
+    padding: 15px;
+    margin-bottom: 29px;
 }
 
-.describe {
-    font-size: 13px;
-
-
+.icon{
+    border-radius: 25px;
 }
+
+.product_card:hover{
+    box-shadow: 0px 0px 20px #7a5051, 0px 0px 40px #7a5051;
+}
+.icon:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+    background-color: #e7d6c7;
+}
+
+
+
+
+
+
 
 
