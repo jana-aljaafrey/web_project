@@ -259,7 +259,37 @@ h1 {
 
 
 /* <!-- starting of the drop list (Zahrah) --> */
+.basket_section {
+    padding: 40px;
+    text-align: center;
+}
 
+.basket_section h1 {
+    color: #3a1f23;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.branch_box {
+    margin-top: 20px;
+}
+
+label {
+    font-size: 20px;
+    color: #3a1f23;
+    display: block;
+    margin-bottom: 10px;
+}
+
+select {
+    width: 250px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #7a5051;
+    border-radius: 10px;
+    background-color: #cab19b;
+    color: #3a1f23;
+}
 /* <!-- ending of the drop list (Zahrah) --> */
 
 
@@ -325,5 +355,14 @@ h1 {
 
 
 /* <!-- starting pay button (Zahrah) --> */
+button {
+    background-color: #7a5051;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+
+    display: block;
+    margin: 20px auto;   /* هذا اللي يوسّطه */
+}
 
 /* <!-- ending pay button (Zahrah) --> */
