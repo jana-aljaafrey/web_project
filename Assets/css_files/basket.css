@@ -265,7 +265,55 @@ h1 {
 
 
 /* <!-- reservation info, date, time and comments (Roba) --> */
+.reservation_info {
+  padding: 50px 20px;
+}
 
+.reservation_box {
+  max-width: 500px;
+  margin: auto;
+  background: white;
+  padding: 50px;
+  border-radius: 8px;
+  border: 2px solid #3a1f23;
+}
+
+.reservation_title {
+  text-align: center;
+  color: #3a1f23;
+  font-size: 2.2rem;
+  margin-bottom: 25px;
+}
+
+.time_label,
+.date_label,
+.comments_label {
+  margin-bottom: 8px;
+  color: #3a1f23;
+  font-size: 1.2rem;
+}
+
+.input_group {
+  margin-bottom: 20px;
+}
+
+.input_group input,
+.input_group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.input_group input:focus,
+.input_group textarea:focus {
+  border-color: #3a1f23;
+}
+
+.input_group textarea {
+  resize: none;
+}
 /* <!-- reservation info, date, time and comments (Roba) --> */
 
 

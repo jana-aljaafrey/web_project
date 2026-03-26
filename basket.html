@@ -22,7 +22,7 @@
                 </a>
                 <div class="header_rightSide">
                     <ul>
-                        <li><a href="index.html">Home</li></a>
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="menu.html">Menu</a></li>
                         <li><a href="services.html">Services</a></li>
                         <li><a href="contact_us.html">Contact Us</a></li>
@@ -138,7 +138,27 @@
 
 
         <!-- reservation info, date, time and comments (Roba) -->
+<section class="reservation_info">
+  <div class="reservation_box">
+    <h2 class="reservation_title">Reservation Info</h2>
 
+    <h3 class="time_label">Select Time</h3>
+    <div class="input_group">
+      <input type="time" id="reservation_time" name="reservation_time" required>
+    </div>
+
+    <h3 class="date_label">Select Date</h3>
+    <div class="input_group">
+      <input type="date" id="reservation_date" name="reservation_date" required min="2026-03-30">
+    </div>
+
+    <h3 class="comments_label">Comments</h3>
+    <div class="input_group">
+      <textarea id="reservation_comments" name="reservation_comments" placeholder="Write your comments here..."></textarea>
+    </div>
+
+  </div>
+</section>
         <!-- reservation info, date, time and comments (Roba) -->
 
 
