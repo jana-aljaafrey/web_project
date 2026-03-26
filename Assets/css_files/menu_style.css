@@ -173,6 +173,7 @@ h1 {
     font-family: "Playwrite IT Moderna", cursive;
     font-size: 30px;
     margin-bottom: 30px;
+    margin-top: 40px;
 }
 
 h2 {
@@ -224,6 +225,7 @@ h2 {
 
 .hot_drinks, .cold_drinks, .desserts {
     margin-left: 50px;
+    margin-bottom: 65px;
 }
 
 .product_card{
