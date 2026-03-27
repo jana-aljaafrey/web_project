@@ -20,6 +20,18 @@ ul {
     list-style: none;
 }
 
+.logo {
+    font-family: "Playwrite IT Moderna", cursive;
+    font-optical-sizing: auto;
+    color: #cab19b;
+    font-weight: 350;
+    font-style: bold;
+    font-size: 25px;
+    padding: 0px;
+    margin: 15px 0px 0px 0px;
+}
+
+
 button {
     border: none;
     background-color: #3a1f23;
@@ -38,15 +50,6 @@ button:hover {
     color: #cab19b;
 }
 
-/* the logo code inside the header*/
-.logo {
-    font-family: "Playwrite IT Moderna", cursive;
-    font-optical-sizing: auto;
-    color: #cab19b;
-    font-weight: 350;
-    font-style: bold;
-    padding: 6px;
-}
 
 /* header codes */
 header {
@@ -223,12 +226,14 @@ h2 {
     margin-left: 20px;
 }
 
-.hot_drinks, .cold_drinks, .desserts {
+.hot_drinks,
+.cold_drinks,
+.desserts {
     margin-left: 50px;
     margin-bottom: 65px;
 }
 
-.product_card{
+.product_card {
     width: 250px;
     border-radius: 25px;
     border: 2px solid #3a1f23;
@@ -236,23 +241,16 @@ h2 {
     margin-bottom: 29px;
 }
 
-.icon{
+.icon {
     border-radius: 25px;
 }
 
-.product_card:hover{
+.product_card:hover {
     box-shadow: 0px 0px 20px #7a5051, 0px 0px 40px #7a5051;
 }
-.icon:hover{
+
+.icon:hover {
     transform: scale(1.1);
     transition: 0.3s;
     background-color: #e7d6c7;
 }
-
-
-
-
-
-
-
-

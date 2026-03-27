@@ -18,11 +18,11 @@
         <nav>
             <div class="header_elements">
                 <a href="index.html">
-                    <h2 class="logo">WarmSIP</h2>
+                    <h3 class="logo">WarmSIP</h3>
                 </a>
                 <div class="header_rightSide">
-                      <ul>
-                        <li><a href="index.html">Home</li></a>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="menu.html">Menu</a></li>
                         <li><a href="services.html">Services</a></li>
                         <li><a href="contact_us.html">Contact Us</a></li>
@@ -39,41 +39,49 @@
     <main class="contact_us">
         <section class="contact_intro">
             <h1 class="main_title">Contact Us</h1>
-            <p class="intro_text">Our services extend beyond simply serving premium coffee. We are pleased to offer exceptional service to all our customers and address their needs whether they are related to inquiries or any other reason. We are honored to serve you promptly while using all our available resources. In addition we value building strong relationships with you , so please don't hesitate to contact us for any reason.</p>
+            <p class="intro_text">Our services extend beyond simply serving premium coffee. We are pleased to offer
+                exceptional service to all our customers and address their needs whether they are related to inquiries
+                or any other reason. We are honored to serve you promptly while using all our available resources. In
+                addition we value building strong relationships with you , so please don't hesitate to contact us for
+                any reason.</p>
             <a href="#contact_form" class="scroll_button">Start your request</a>
         </section>
         <section class="contact_form_section" id="contact_form">
             <h2 class="section_title">Reaching Out to us:</h2>
             <form class="contact_form">
-              <div class="field_group">
-                  <label for="fullName" class="small_label">Full name:</label>
-                  <input type="text" id="fullName" name="fullName" placeholder="Enter your full name..." required>
-              </div>
-              <div class="field_group">
-                  <label for="phoneNumber" class="small_label">Phone number:</label>
-                  <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="05xxxxxxxx" pattern="05[0-9]{8}" inputmode="numeric" maxlength="10" oninput="this.value = this.value.replace(/[^0-9]/g, '')" required>
-              </div>
-              <div class="field_group">
-                  <label for="serviceType" class="small_label">Type of service:</label>
-                  <div class="select_wrapper">
-                      <select id="serviceType" name="serviceType" required>
-                       <option value="">Select service</option>
-                       <option>Complaint</option>
-                       <option>Suggestion</option>
-                       <option>Inquiry</option>
-                       <option>Support request</option>
-                      </select>
-                  </div>
-              </div>
-              <div class="field_group">
-                  <label for="messageTitle" class="small_label">Message title:</label>
-                  <input type="text" id="messageTitle" name="messageTitle" placeholder="Enter your message title..." required>
-              </div>
-              <div class="field_group">
-                  <label for="customerMessage" class="small_label">Message content:</label>
-                  <textarea id="customerMessage" name="customerMessage" placeholder="Write your message here..." required></textarea>
-              </div>
-              <button type="submit" class="send_button">Send</button>
+                <div class="field_group">
+                    <label for="fullName" class="small_label">Full name:</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="Enter your full name..." required>
+                </div>
+                <div class="field_group">
+                    <label for="phoneNumber" class="small_label">Phone number:</label>
+                    <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="05xxxxxxxx" pattern="05[0-9]{8}"
+                        inputmode="numeric" maxlength="10" oninput="this.value = this.value.replace(/[^0-9]/g, '')"
+                        required>
+                </div>
+                <div class="field_group">
+                    <label for="serviceType" class="small_label">Type of service:</label>
+                    <div class="select_wrapper">
+                        <select id="serviceType" name="serviceType" required>
+                            <option value="">Select service</option>
+                            <option>Complaint</option>
+                            <option>Suggestion</option>
+                            <option>Inquiry</option>
+                            <option>Support request</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="field_group">
+                    <label for="messageTitle" class="small_label">Message title:</label>
+                    <input type="text" id="messageTitle" name="messageTitle" placeholder="Enter your message title..."
+                        required>
+                </div>
+                <div class="field_group">
+                    <label for="customerMessage" class="small_label">Message content:</label>
+                    <textarea id="customerMessage" name="customerMessage" placeholder="Write your message here..."
+                        required></textarea>
+                </div>
+                <button type="submit" class="send_button">Send</button>
             </form>
         </section>
     </main>
@@ -82,18 +90,19 @@
     <!--starting of footer codes-->
     <footer>
         <div class="row_one">
-            <a href="">Locations</a>
+            <a href="index.html#locations_part">Locations</a>
             <hr>
             <a href="" target="_blank">Contact Us</a>
         </div>
         <div class="row_tow">
             <ul>
-                <li><a href="" target="_blank"><img src="Assets/images/instagramIcon.png" alt="Instagram Icon"
-                            width="55"></a></li>
-                <li><a href="" target="_blank"><img src="Assets/images/xIcon.png" alt="X Platform Icon" width="50"></a>
+                <li><a href="https://www.instagram.com/8ozcafe/?hl=ar" target="_blank"><img
+                            src="Assets/images/instagramIcon.png" alt="Instagram Icon" width="55"></a></li>
+                <li><a href="https://x.com/8ozcafe" target="_blank"><img src="Assets/images/xIcon.png"
+                            alt="X Platform Icon" width="50"></a>
                 </li>
-                <li><a href="" target="_blank" class="instagramIcon"><img src="Assets/images/emailIcon.png"
-                            alt="Email Icon" width="50" class="inst"></a></li>
+                <li><a href="mailto:8Oz.coffee@gmail.com" target="_blank" class="instagramIcon"><img
+                            src="Assets/images/emailIcon.png" alt="Email Icon" width="50" class="inst"></a></li>
             </ul>
         </div>
         <p>Copyright&copy;WarmSIP</p>

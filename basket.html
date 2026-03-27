@@ -18,7 +18,7 @@
         <nav>
             <div class="header_elements">
                 <a href="index.html">
-                    <h2 class="logo">WarmSIP</h2>
+                    <h3 class="logo">WarmSIP</h3>
                 </a>
                 <div class="header_rightSide">
                     <ul>
@@ -38,7 +38,7 @@
     <!-- starting of main codes -->
     <main>
 
-        <!-- starting of the title and items part (Jana) -->
+        <!-- starting of the title and items part  -->
         <h1>Your Basket</h1>
 
         <section class="cards">
@@ -127,78 +127,77 @@
 
         </section>
 
-        <!-- ending of the title and items part (Jana) -->
+        <!-- ending of the title and items part  -->
 
 
 
-        <!-- starting of the drop list (Zahrah) -->
-<section class="basket_section">
-
-    <div class="branch_box">
-        <label for="branch">Choose a branch:</label>
-
-        <select id="branch" name="branch">
-            <option value="">Select a branch</option>
-            <option value="Dhahran">Prince Mutaib Road, Hajer District, Dhahran 34254, Saudi Arabia.</option>
-            <option value="Al Khobar">King Saud bin Abdulaziz Road, Al-Safa District, Al Khobar 34222, Saudi Arabia.</option>
-            <option value="dammam">Abu Bakr Al-Siddiq Street, Al-Manar District, Dammam 32274, Saudi Arabia.</option>
-        </select>
-    </div>
-
-</section>
-        <!-- ending of the drop list (Zahrah) -->
+        <!-- reservation info, date, time and comments -->
+        <form class="reservation_info" id="reservation_info">
+            <h2 class="reservation_title">Reservation Info</h2>
+            <div class="reservation_box">
 
 
+                <label for="reservation_time" class="time_label">Select Time</label>
+                <div class="input_group">
+                    <input type="time" id="reservation_time" name="reservation_time" required>
+                </div>
 
-        <!-- reservation info, date, time and comments (Roba) -->
-<section class="reservation_info">
-  <div class="reservation_box">
-    <h2 class="reservation_title">Reservation Info</h2>
+                <label for="reservation_date" class="date_label">Select Date</label>
+                <div class="input_group">
+                    <input type="date" id="reservation_date" name="reservation_date" required min="2026-03-30">
+                </div>
 
-    <h3 class="time_label">Select Time</h3>
-    <div class="input_group">
-      <input type="time" id="reservation_time" name="reservation_time" required>
-    </div>
+                <label for="reservation_comments" class="comments_label">Comments</label>
+                <div class="input_group">
+                    <textarea id="reservation_comments" name="reservation_comments"
+                        placeholder="Write your comments here..."></textarea>
+                </div>
+                <div class="branch_box">
+                    <label for="branch">Choose a branch:</label>
 
-    <h3 class="date_label">Select Date</h3>
-    <div class="input_group">
-      <input type="date" id="reservation_date" name="reservation_date" required min="2026-03-30">
-    </div>
-
-    <h3 class="comments_label">Comments</h3>
-    <div class="input_group">
-      <textarea id="reservation_comments" name="reservation_comments" placeholder="Write your comments here..."></textarea>
-    </div>
-
-  </div>
-</section>
-        <!-- reservation info, date, time and comments (Roba) -->
+                    <select id="branch" name="branch" required>
+                        <option disabled selected value="">Select a branch</option>
+                        <option value="dhahran">Prince Mutaib Road, Hajer District, Dhahran 34254, Saudi Arabia.
+                        </option>
+                        <option value="al_khobar">King Saud bin Abdulaziz Road, Al-Safa District, Al Khobar 34222,
+                            Saudi
+                            Arabia.</option>
+                        <option value="dammam">Abu Bakr Al-Siddiq Street, Al-Manar District, Dammam 32274, Saudi
+                            Arabia.
+                        </option>
+                    </select>
+                </div>
+            </div>
+        </form>
+        <!-- reservation info, date, time and comments -->
 
 
 
-        <!-- starting of payment infos and total price (Maria) -->
-         <section id="price_box">
+        <!-- starting of payment infos and total price  -->
+        <section id="price_box">
             <div class="items">
                 <p class="total">Total Price:</p>
-                <p class="price">100</p>
+                <p class="price">97</p>
             </div>
+            <hr>
             <div class="items">
-                <p class="total">Tax (%5):</p>
+                <p class="total">Tax (5%):</p>
                 <p class="price"> 5</p>
             </div>
+            <hr>
             <div class="items">
                 <p class="total">Grand Total:</p>
-                <p class="price">105</p>
+                <p class="price">101.85</p>
             </div>
-         </section>
+        </section>
 
-        <!-- ending of payment infos and total price (Maria) -->
+        <!-- ending of payment infos and total price  -->
 
 
 
-        <!-- starting pay button (Zahrah) -->
-        <button class="checkout_btn">Puy Now </button> 
-        <!-- ending pay button (Zahrah) -->
+        <!-- starting pay button  -->
+        <button type="submit" form="reservation_info">Pay Now</button>
+        <!-- ending pay button  -->
 
     </main>
     <!-- ending of main codes -->
@@ -206,18 +205,19 @@
     <!--starting of footer codes-->
     <footer>
         <div class="row_one">
-            <a href="">Locations</a>
+            <a href="index.html#locations_part">Locations</a>
             <hr>
             <a href="" target="_blank">Contact Us</a>
         </div>
         <div class="row_tow">
             <ul>
-                <li><a href="" target="_blank"><img src="Assets/images/instagramIcon.png" alt="Instagram Icon"
-                            width="55"></a></li>
-                <li><a href="" target="_blank"><img src="Assets/images/xIcon.png" alt="X Platform Icon" width="50"></a>
+                <li><a href="https://www.instagram.com/8ozcafe/?hl=ar" target="_blank"><img
+                            src="Assets/images/instagramIcon.png" alt="Instagram Icon" width="55"></a></li>
+                <li><a href="https://x.com/8ozcafe" target="_blank"><img src="Assets/images/xIcon.png"
+                            alt="X Platform Icon" width="50"></a>
                 </li>
-                <li><a href="" target="_blank" class="instagramIcon"><img src="Assets/images/emailIcon.png"
-                            alt="Email Icon" width="50" class="inst"></a></li>
+                <li><a href="mailto:8Oz.coffee@gmail.com" target="_blank" class="instagramIcon"><img
+                            src="Assets/images/emailIcon.png" alt="Email Icon" width="50" class="inst"></a></li>
             </ul>
         </div>
         <p>Copyright&copy;WarmSIP</p>

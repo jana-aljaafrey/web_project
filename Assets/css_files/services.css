@@ -46,8 +46,11 @@ button:hover {
     color: #cab19b;
     font-weight: 350;
     font-style: bold;
-    padding: 6px;
+    font-size: 25px;
+    padding: 0px;
+    margin: 15px 0px 0px 0px;
 }
+
 
 /* header codes */
 header {
@@ -253,7 +256,7 @@ footer p {
 .overlay {
     color: white;
     text-align: center;
-     padding-top: 80px;
+    padding-top: 80px;
 }
 
 .overlay .one_word_title {
@@ -269,12 +272,25 @@ footer p {
 h1 {
     font-size: 38px;
     font-family: "Playwrite IT Moderna", cursive;
+    background-color: #cab19b;
+    text-align: center;
+    padding: 20px 10px;
+    margin: auto;
+    color: #3a1f23;
+}
+
+h2 {
+    font-size: 38px;
+    font-family: "Playwrite IT Moderna", cursive;
     background-color: #3a1f23BB;
     margin-left: 500px;
     margin-right: 500px;
     border-radius: 25px;
     margin-bottom: 50px;
 }
+
+
+
 
 .overlay p {
     font-size: 22px;
@@ -294,6 +310,7 @@ hr {
     height: 15px;
     padding: 0px;
     margin: 0px;
+
 }
 
 .section_space {

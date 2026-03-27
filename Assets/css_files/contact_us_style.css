@@ -16,10 +16,35 @@ a {
     text-decoration: none;
 }
 
+
+.main_title {
+    font-size: 55px;
+    margin-bottom: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1,
+p {
+    background-color: #3a1f23BB;
+    border-radius: 20px;
+    padding: 13px;
+}
+
 ul {
     list-style: none;
 }
 
+/* the logo code inside the header*/
+.logo {
+    font-family: "Playwrite IT Moderna", cursive;
+    font-optical-sizing: auto;
+    color: #cab19b;
+    font-weight: 350;
+    font-style: bold;
+    font-size: 25px;
+    padding: 0px;
+    margin: 15px 0px 0px 0px;
+}
 
 button {
     border: none;
@@ -37,15 +62,7 @@ button:hover {
     transition: 0.2s;
     color: #cab19b;
 }
-/* the logo code inside the header*/
-.logo {
-    font-family: "Playwrite IT Moderna", cursive;
-    font-optical-sizing: auto;
-    color: #cab19b;
-    font-weight: 350;
-    font-style: bold;
-    padding: 6px;
-}
+
 
 /* header codes */
 header {
@@ -68,7 +85,7 @@ header {
     list-style: none;
     gap: 40px;
     margin-top: 30px;
-    
+
 }
 
 .header_elements li a {
@@ -151,106 +168,121 @@ footer p {
     justify-content: center;
     align-items: center;
 }
+
 .instagramIcon {
     padding: 10px;
 }
 
 /* on hover on footer */
-.row_tow img:hover, .row_one a:hover{
+.row_tow img:hover,
+.row_one a:hover {
     border-radius: 40px;
     box-shadow: 0 0 10px #cab19b;
 }
+
 /* on main*/
 .contact_intro {
-  min-height: 70vh;
-  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
-              url("../images/coffeepc.jpg") center/cover no-repeat;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: white;
-  padding: 40px 20px 120px;
+    min-height: 70vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url("../images/coffeepc.jpg") center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 40px 20px 120px;
 }
-.main_title {
-  font-size: 5rem;
-  margin-bottom: 14px;
-}
+
+
 .intro_text {
-  max-width: 850px;
-  line-height: 1.4;
-  font-size: 1.4rem;
-  font-family: 'Playfair Display', serif;
-  text-align: center;
-  margin: 0 auto;
-  word-spacing: normal;
-   }
+    max-width: 850px;
+    line-height: 1.4;
+    font-size: 21px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    margin: 0 auto;
+    word-spacing: normal;
+}
+
 .scroll_button {
-  background: #cab19b;
-  color: #333;
-  padding:12px 25px;
-  border-radius: 8px;
-  text-decoration: none;
-  display: inline-block;
-  margin-top: 30px;
- }
- .scroll_button:hover {
-  background: #3a1f23;
-  color: white;
- }
+    background: #cab19b;
+    color: #333;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.scroll_button:hover {
+    background: #3a1f23;
+    color: white;
+}
+
 .contact_form_section {
-  padding: 50px 20px;
-  background: #f7f3ef;
+    padding: 50px 20px;
+    background: #f7f3ef;
 }
+
 .section_title {
-  text-align: center;
-  color: #3a1f23;
-  font-size: 2.2rem;
-  margin-bottom: 40px;
+    text-align: center;
+    color: #3a1f23;
+    font-size: 2.2rem;
+    margin-bottom: 40px;
 }
+
 .contact_form {
-  max-width: 600px;
-  margin: auto;
-  background: white;
-  padding: 30px;
-  border-radius: 8px;
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
 }
+
 .field_group {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
+
 .small_label {
-  display: block;
-  margin-bottom: 6px;
-  font-weight: bold;
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
 }
-input, textarea, select {
-  width: 100%;
-  padding: 10px;
-  border: 2px solid #ddd;
-  border-radius: 8px;
-  outline: none;
-  font-family: 'Poppins', sans-serif;
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
 }
+
 input:focus,
 textarea:focus,
 select:focus {
-  border-color: #3a1f23;
+    border-color: #3a1f23;
 }
+
 .send_button {
-  width: auto;
-  padding: 12px 25px;
-  background: #3a1f23;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  display: block;
-  margin: 20px auto 0;
+    width: auto;
+    padding: 12px 25px;
+    background: #3a1f23;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto 0;
 }
+
 .send_button:hover {
-  background: #4a3535;
+    background: #4a3535;
 }
+
 .contact_form textarea {
-  resize: none;
+    resize: none;
 }

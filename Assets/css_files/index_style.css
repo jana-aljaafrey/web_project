@@ -20,6 +20,18 @@ ul {
     list-style: none;
 }
 
+
+.logo {
+    font-family: "Playwrite IT Moderna", cursive;
+    font-optical-sizing: auto;
+    color: #cab19b;
+    font-weight: 350;
+    font-style: bold;
+    font-size: 25px;
+    padding: 0px;
+    margin: 15px 0px 0px 0px;
+}
+
 button {
     border: none;
     background-color: #3a1f23;
@@ -37,15 +49,7 @@ button:hover {
     color: #cab19b;
 }
 
-/* the logo code inside the header*/
-.logo {
-    font-family: "Playwrite IT Moderna", cursive;
-    font-optical-sizing: auto;
-    color: #cab19b;
-    font-weight: 350;
-    font-style: bold;
-    padding: 6px;
-}
+
 
 /* header codes */
 header {
@@ -68,7 +72,7 @@ header {
     list-style: none;
     gap: 40px;
     margin-top: 30px;
-    
+
 }
 
 .header_elements li a {
@@ -299,18 +303,13 @@ button:hover {
 /* top selling part */
 
 .our_products {
-    padding-top: 30px;
-    /* padding-left: 135px; */
+    padding-top: 90px;
     margin-top: 40px;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; */
 }
 
 
 /*.our_products*/
-h3 {
+h2 {
     justify-content: center;
     /* margin-left: 250px; */
     padding: 30px;
@@ -377,8 +376,8 @@ h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
-    padding-top: 40px;
+    padding-top: 90px;
+    margin-top: 40px;
     gap: 10px;
     padding-bottom: 40px;
     margin-bottom: 30px;
@@ -415,6 +414,8 @@ h3 {
     flex-direction: column;
     align-items: center;
     padding: 60px 0px 40px 0px;
+    padding-top: 90px;
+    margin-top: 40px;
 }
 
 .partners {
