@@ -16,6 +16,10 @@ a {
     text-decoration: none;
 }
 
+p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
 
 .logo {
     font-family: "Playwrite IT Moderna", cursive;
@@ -179,25 +183,16 @@ footer p {
 }
 
 
-/* <!-- starting of the title and items part (Jana) --> */
+/* <!-- starting of the title and items part  --> */
 h1 {
     text-align: center;
     color: #3a1f23;
     font-family: "Playwrite IT Moderna", cursive;
     margin-bottom: 70px;
     margin-top: 40px;
-      font-size: 30px;
+    font-size: 30px;
 }
 
-/* .cards hr {
-    margin: 0px 80px;
-    opacity: 0.2;
-    width: 1200px;
-    height: 1px;
-    border: none;
-    background-color: #3a1f23;
-
-} */
 
 .card_content {
     display: flex;
@@ -239,11 +234,10 @@ h1 {
 
 .card_content p {
     color: #3a1f23;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 20px;
 }
 
-.price::after {
+.value::after {
     content: "⃁";
 }
 
@@ -270,11 +264,11 @@ h1 {
     box-shadow: 10px 10px 20px #7a5051;
 }
 
-/* <!-- ending of the title and items part (Jana) --> */
+/* <!-- ending of the title and items part --> */
 
 
 
-/* <!-- starting of the drop list (Zahrah) --> */
+/* <!-- starting of the drop list  --> */
 .basket_section {
     padding: 40px;
     text-align: center;
@@ -307,11 +301,11 @@ select {
 
 }
 
-/* <!-- ending of the drop list (Zahrah) --> */
+/* <!-- ending of the drop list  --> */
 
 
 
-/* <!-- reservation info, date, time and comments (Roba) --> */
+/* <!-- reservation info, date, time and comments  --> */
 .reservation_info {
     padding: 50px 20px;
 }
@@ -366,13 +360,13 @@ select {
     resize: none;
 }
 
-/* <!-- reservation info, date, time and comments (Roba) --> */
+/* <!-- reservation info, date, time and comments  --> */
 
 
 
-/* <!-- starting of payment infos and total price (Maria) --> */
+/* <!-- starting of payment infos and total price  --> */
 
-#price_box {
+#the_price {
     max-width: 500px;
     margin: auto;
     margin-bottom: 20px;
@@ -383,9 +377,6 @@ select {
     padding: 50px;
     border-radius: 9px;
     border: 2px solid #3a1f23;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
-
 }
 
 .items {
@@ -401,12 +392,13 @@ select {
 
 }
 
-.price {
+.value {
     font-weight: bold;
     color: #3a1f23;
 }
 
-/* <!-- ending of payment infos and total price (Maria) --> */
+
+/* <!-- ending of payment infos and total price  --> */
 
 
 
