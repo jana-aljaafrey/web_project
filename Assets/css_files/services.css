@@ -192,7 +192,7 @@ footer p {
     box-shadow: 0 0 40px #3a1f23, 0 0 20px #3a1f2350;
     border-radius: 65px;
     position: sticky;
-    margin-top: 20px;
+    margin-top: 98px;
     margin-left: 25px;
     position: fixed;
 }
@@ -295,7 +295,7 @@ h2 {
 .overlay p {
     font-size: 22px;
     background-color: #3a1f23BB;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     width: 800px;
     margin: auto;
     line-height: 1.6;

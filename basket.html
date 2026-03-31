@@ -136,6 +136,11 @@
             <h2 class="reservation_title">Reservation Info</h2>
             <div class="reservation_box">
 
+                <label for="phoneNumber" class="small_label">Phone number:</label>
+                <div class="input_group">
+                    <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="05xxxxxxxx" inputmode="numeric"
+                        maxlength="10" required> 
+                </div>
 
                 <label for="reservation_time" class="time_label">Select Time</label>
                 <div class="input_group">
@@ -176,7 +181,7 @@
         <!-- starting of payment infos and total price  -->
         <section id="price_box">
             <div class="items">
-                <p class="total">Total Price:</p>
+                <p class="total">Subtotal:</p>
                 <p class="price">97</p>
             </div>
             <hr>
@@ -186,7 +191,7 @@
             </div>
             <hr>
             <div class="items">
-                <p class="total">Grand Total:</p>
+                <p class="total">Total:</p>
                 <p class="price">101.85</p>
             </div>
         </section>

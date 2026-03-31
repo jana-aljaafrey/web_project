@@ -18,7 +18,7 @@ a {
 
 
 .main_title {
-     font-size: 30px;
+    font-size: 30px;
     margin-bottom: 18px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -206,6 +206,7 @@ footer p {
 
 .scroll_button {
     background: #cab19b;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #333;
     padding: 12px 25px;
     border-radius: 8px;

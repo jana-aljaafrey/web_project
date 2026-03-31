@@ -175,7 +175,7 @@ h1 {
     color: #3a1f23;
     font-family: "Playwrite IT Moderna", cursive;
     font-size: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 68px;
     margin-top: 40px;
 }
 
@@ -183,7 +183,7 @@ h2 {
     text-align: left;
     color: #3a1f23;
     font-family: "Playwrite IT Moderna", cursive;
-    font-size: 20px;
+    font-size: 27px;
     margin-bottom: 25px;
 }
 
@@ -224,12 +224,13 @@ h2 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin-left: 20px;
+    justify-items: center;
 }
 
 .hot_drinks,
 .cold_drinks,
 .desserts {
-    margin-left: 50px;
+    /* margin-left: 50px; */
     margin-bottom: 65px;
 }
 
@@ -253,4 +254,12 @@ h2 {
     transform: scale(1.1);
     transition: 0.3s;
     background-color: #e7d6c7;
+}
+
+.category {
+    display: flex;
+    margin-bottom: 45px;
+    gap: 15px;
+   justify-content: center;
+   font-size: ;
 }
