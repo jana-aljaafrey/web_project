@@ -194,8 +194,7 @@ footer p {
     padding: 40px 20px 120px;
 }
 
-
-.intro_text {
+.intro_paragraph {
     max-width: 850px;
     line-height: 1.4;
     font-size: 21px;
@@ -233,7 +232,7 @@ footer p {
     margin-bottom: 40px;
 }
 
-.contact_form {
+.contact_us_form {
     max-width: 600px;
     margin: auto;
     background: white;
@@ -241,11 +240,11 @@ footer p {
     border-radius: 8px;
 }
 
-.field_group {
+.fields_group {
     margin-bottom: 20px;
 }
 
-.small_label {
+.field_label {
     display: block;
     margin-bottom: 6px;
     font-weight: bold;
