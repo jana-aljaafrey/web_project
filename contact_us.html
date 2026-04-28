@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Birthstone&family=Playwrite+IT+Moderna&display=swap"
         rel="stylesheet">
+    <script src="Assets/javascript/all.js"></script>
 </head>
 
 <body>
@@ -28,7 +29,7 @@
                         <li><a href="contact_us.html">Contact Us</a></li>
                     </ul>
                     <a href="basket.html"><img src="Assets/images/emptyBasket.png" width="75" alt="basket_icon"
-                            class="basket_icon"></a>
+                            class="basket_icon" id="basket_icon"></a>
                 </div>
             </div>
         </nav>
@@ -36,10 +37,10 @@
     <!-- ending of the header codes -->
 
     <!-- starting of main codes -->
-    <main class="contact_us">
+    <main class="contact_us_page">
         <section class="contact_intro">
             <h1 class="main_title">Contact Us</h1>
-            <p class="intro_text">Our services extend beyond simply serving premium coffee. We are pleased to offer
+            <p class="intro_paragraph">Our services extend beyond simply serving premium coffee. We are pleased to offer
                 exceptional service to all our customers and address their needs whether they are related to inquiries
                 or any other reason. We are honored to serve you promptly while using all our available resources. In
                 addition we value building strong relationships with you , so please don't hesitate to contact us for
@@ -48,18 +49,18 @@
         </section>
         <section class="contact_form_section" id="contact_form">
             <h2 class="section_title">Reaching Out to us:</h2>
-            <form class="contact_form">
-                <div class="field_group">
-                    <label for="fullName" class="small_label">Full name:</label>
-                    <input type="text" id="fullName" name="fullName" placeholder="Enter your full name..." required>
+            <form class="contact_us_form">
+                <div class="fields_group">
+                    <label for="user_Name" class="field_label">Full name:</label>
+                    <input type="text" id="user_Name" name="user_Name" placeholder="Enter your full name..." required>
                 </div>
-                <div class="field_group">
-                    <label for="phoneNumber" class="small_label">Phone number:</label>
+                <div class="fields_group">
+                    <label for="phoneNumber" class="field_label">Phone number:</label>
                     <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="05xxxxxxxx" inputmode="numeric"
                         maxlength="10" required>
                 </div>
-                <div class="field_group">
-                    <label for="serviceType" class="small_label">Type of service:</label>
+                <div class="fields_group">
+                    <label for="serviceType" class="field_label">Type of service:</label>
                     <div class="Select_service">
                         <select id="serviceType" name="serviceType" required>
                             <option value="">Select service</option>
@@ -70,13 +71,13 @@
                         </select>
                     </div>
                 </div>
-                <div class="field_group">
-                    <label for="messageTitle" class="small_label">Message title:</label>
+                <div class="fields_group">
+                    <label for="messageTitle" class="field_label">Message title:</label>
                     <input type="text" id="messageTitle" name="messageTitle" placeholder="Enter your message title..."
                         required>
                 </div>
-                <div class="field_group">
-                    <label for="customerMessage" class="small_label">Message content:</label>
+                <div class="fields_group">
+                    <label for="customerMessage" class="field_label">Message content:</label>
                     <textarea id="customerMessage" name="customerMessage" placeholder="Write your message here..."
                         required></textarea>
                 </div>

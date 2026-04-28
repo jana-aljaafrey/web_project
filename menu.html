@@ -10,6 +10,24 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Birthstone&family=Playwrite+IT+Moderna&display=swap"
         rel="stylesheet">
+    <script src="Assets/javascript/all.js"></script>
+    <style>
+        #announcement {
+            background-color: #e7d6c7;
+            /* margin: 0 auto;
+            margin-top: 20px; */
+            padding: 29px;
+            top: 100px;
+            margin-left: 550px;
+            font-size: 28px;
+            border: 4px solid #7a5051;
+            border-radius: 30px;
+            color: #3a1f23;
+            position: fixed;
+            box-shadow: 10px 10px 30px 10px #3a1f23;
+            opacity: 0;
+        }
+    </style>
 </head>
 
 <body>
@@ -28,12 +46,14 @@
                         <li><a href="contact_us.html">Contact Us</a></li>
                     </ul>
                     <a href="basket.html"><img src="Assets/images/emptyBasket.png" width="75" alt="basket_icon"
-                            class="basket_icon"></a>
+                            class="basket_icon" id="basket_icon"></a>
                 </div>
             </div>
         </nav>
     </header>
     <!-- ending of the header codes -->
+
+    <p id="announcement">Added successfully</p>
 
     <!-- starting of main codes -->
     <main>
@@ -51,7 +71,9 @@
                     <div class="card_info">
                         <p class="name">Espresso</p>
                         <div class="priceAndLogo">
-                            <img src="Assets/images/menu_basket_icon.png" alt="Basket Icon" width="50" class="icon">
+                            <button style="background-color: white;" onclick='addToBasket("Espresso", 20, "Assets/images/Espresso.jpg")'><img
+                                    src="Assets/images/menu_basket_icon.png" alt="Basket Icon" width="50"
+                                    class="icon"></button>
                             <P class="price">20</P>
                         </div>
                     </div>
@@ -62,7 +84,9 @@
                     <div class="card_info">
                         <p class="name">Americano</p>
                         <div class="priceAndLogo">
-                            <img src="Assets/images/menu_basket_icon.png" alt="Basket Icon" width="50" class="icon">
+                            <button style="background-color: white;" onclick='addToBasket("Americano",22,"Assets/images/Americano.jpg")'><img
+                                    src="Assets/images/menu_basket_icon.png" alt="Basket Icon" width="50"
+                                    class="icon"></button>
                             <P class="price">22</P>
                         </div>
                     </div>
@@ -73,7 +97,9 @@
                     <div class="card_info">
                         <p class="name">Hot Latte</p>
                         <div class="priceAndLogo">
-                            <img src="Assets/images/menu_basket_icon.png" alt="Basket Icon" width="50" class="icon">
+                            <button style="background-color: white;" onclick='addToBasket("Hot Latte", 24, "Assets/images/Latte.jpg")'><img
+                                    src="Assets/images/menu_basket_icon.png" alt="Basket Icon" width="50"
+                                    class="icon"></button>
                             <P class="price">24</P>
                         </div>
                     </div>
@@ -84,7 +110,9 @@
                     <div class="card_info">
                         <p class="name">Cappuccino</p>
                         <div class="priceAndLogo">
-                            <img src="Assets/images/menu_basket_icon.png" alt="Basket Icon" width="50" class="icon">
+                            <button style="background-color: white;" onclick='addToBasket("Cappuccino",24,"Assets/images/Cappuccino.jpg")'><img
+                                    src="Assets/images/menu_basket_icon.png" alt="Basket Icon" width="50"
+                                    class="icon"></button>
                             <P class="price">24</P>
                         </div>
                     </div>
@@ -94,9 +122,11 @@
                     <img src="Assets/images/Hot_Spanish_Latte.jpg" alt="Hot Spanish Latte photo" width="250"
                         class="product_img">
                     <div class="card_info">
-                        <p class="name">Spanish Latte</p>
+                        <p class="name">Hot Spanish Latte</p>
                         <div class="priceAndLogo">
-                            <img src="Assets/images/menu_basket_icon.png" alt="Basket Icon" width="50" class="icon">
+                            <button style="background-color: white;" onclick='addToBasket("Hot Spanish Latte",26,"Assets/images/Hot_Spanish_Latte.jpg")'><img
+                                    src="Assets/images/menu_basket_icon.png" alt="Basket Icon" width="50"
+                                    class="icon"></button>
                             <P class="price">26</P>
                         </div>
                     </div>
@@ -108,7 +138,9 @@
                     <div class="card_info">
                         <p class="name">Hot Chocolate</p>
                         <div class="priceAndLogo">
-                            <img src="Assets/images/menu_basket_icon.png" alt="Basket Icon" width="50" class="icon">
+                            <button style="background-color: white;" onclick='addToBasket("Hot Chocolate",24,"Assets/images/Hot_Chocolate.jpg")'><img
+                                    src="Assets/images/menu_basket_icon.png" alt="Basket Icon" width="50"
+                                    class="icon"></button>
                             <P class="price">22</P>
                         </div>
                     </div>
@@ -129,7 +161,9 @@
                     <div class="card_info">
                         <p class="name">Iced Latte</p>
                         <div class="priceAndLogo">
-                            <img src="Assets/images/menu_basket_icon.png" alt="Basket Icon" width="50" class="icon">
+                            <button style="background-color: white;" onclick='addToBasket("Iced Latte",25, "Assets/images/Iced_Latte.jpg")'><img
+                                    src="Assets/images/menu_basket_icon.png" alt="Basket Icon" width="50"
+                                    class="icon"></button>
                             <P class="price">25</P>
                         </div>
                     </div>
@@ -140,7 +174,9 @@
                     <div class="card_info">
                         <p class="name">Cold Brew</p>
                         <div class="priceAndLogo">
-                            <img src="Assets/images/menu_basket_icon.png" alt="Basket Icon" width="50" class="icon">
+                            <button style="background-color: white;" onclick='addToBasket("Cold Brew",27, "Assets/images/Cold_Brew.jpg")'><img
+                                    src="Assets/images/menu_basket_icon.png" alt="Basket Icon" width="50"
+                                    class="icon"></button>
                             <P class="price">27</P>
                         </div>
                     </div>
@@ -152,7 +188,9 @@
                     <div class="card_info">
                         <p class="name">Iced Spanish Latte</p>
                         <div class="priceAndLogo">
-                            <img src="Assets/images/menu_basket_icon.png" alt="Basket Icon" width="50" class="icon">
+                            <button style="background-color: white;" onclick='addToBasket("Iced Spanish Latte",28, "Assets/images/Iced_Spanish_Latte.jpg")'><img
+                                    src="Assets/images/menu_basket_icon.png" alt="Basket Icon" width="50"
+                                    class="icon"></button>
                             <P class="price">28</P>
                         </div>
                     </div>
@@ -163,7 +201,9 @@
                     <div class="card_info">
                         <p class="name">Frappuccino</p>
                         <div class="priceAndLogo">
-                            <img src="Assets/images/menu_basket_icon.png" alt="Basket Icon" width="50" class="icon">
+                            <button style="background-color: white;" onclick='addToBasket("Frappuccino",29, "Assets/images/Frappuccino.jpg")'><img
+                                    src="Assets/images/menu_basket_icon.png" alt="Basket Icon" width="50"
+                                    class="icon"></button>
                             <P class="price">29</P>
                         </div>
                     </div>
@@ -174,7 +214,9 @@
                     <div class="card_info">
                         <p class="name">Iced Mocha</p>
                         <div class="priceAndLogo">
-                            <img src="Assets/images/menu_basket_icon.png" alt="Basket Icon" width="50" class="icon">
+                            <button style="background-color: white;" onclick='addToBasket("Iced Mocha",25, "Assets/images/Iced_Mocha.jpg")'><img
+                                    src="Assets/images/menu_basket_icon.png" alt="Basket Icon" width="50"
+                                    class="icon"></button>
                             <P class="price">25</P>
                         </div>
                     </div>
@@ -188,7 +230,7 @@
                 <h2>Desserts</h2>
                 <img src="Assets/images/cupcake_icon.png" alt="Desserts Icon" width="75" height="75">
             </div>
-            
+
             <div class="products">
                 <!-- Croissant -->
                 <article class="product_card">
@@ -196,7 +238,10 @@
                     <div class="card_info">
                         <p class="name">Croissant</p>
                         <div class="priceAndLogo">
-                            <img src="Assets/images/menu_basket_icon.png" alt="Basket Icon" width="50" class="icon">
+                            <button style="background-color: white;" onclick='addToBasket("Croissant",18, "Assets/images/Croissant.jpg")'><img
+                                    src="Assets/images/menu_basket_icon.png" alt="Basket Icon" width="50"
+                                    class="icon"></button>
+
                             <P class="price">18</P>
                         </div>
                     </div>
@@ -207,7 +252,10 @@
                     <div class="card_info">
                         <p class="name">Cookies</p>
                         <div class="priceAndLogo">
-                            <img src="Assets/images/menu_basket_icon.png" alt="Basket Icon" width="50" class="icon">
+                            <button style="background-color: white;" onclick='addToBasket("Cookies",14, "Assets/images/Cookies.jpg")'><img
+                                    src="Assets/images/menu_basket_icon.png" alt="Basket Icon" width="50"
+                                    class="icon"></button>
+
                             <P class="price">14</P>
                         </div>
                     </div>
@@ -218,18 +266,24 @@
                     <div class="card_info">
                         <p class="name">Brownies</p>
                         <div class="priceAndLogo">
-                            <img src="Assets/images/menu_basket_icon.png" alt="Basket Icon" width="50" class="icon">
+                            <button style="background-color: white;" onclick='addToBasket("Brownies",17, "Assets/images/Brownies.jpg")'><img
+                                    src="Assets/images/menu_basket_icon.png" alt="Basket Icon" width="50"
+                                    class="icon"></button>
+
                             <P class="price">17</P>
                         </div>
                     </div>
                 </article>
-                <!-- Cheesecake -->
+                <!--Chocolate Cheesecake -->
                 <article class="product_card">
-                    <img src="Assets/images/Cheesecake.jpg" alt="Cheesecake photo" width="250" class="product_img">
+                    <img src="Assets/images/Cheesecake.jpg" alt="Chocolate Cheesecake photo" width="250" class="product_img">
                     <div class="card_info">
                         <p class="name">Chocolate Cheesecake</p>
                         <div class="priceAndLogo">
-                            <img src="Assets/images/menu_basket_icon.png" alt="Basket Icon" width="50" class="icon">
+                            <button style="background-color: white;" onclick='addToBasket("Chocolate Cheesecake",26, "Assets/images/Cheesecake.jpg")'><img
+                                    src="Assets/images/menu_basket_icon.png" alt="Basket Icon" width="50"
+                                    class="icon"></button>
+
                             <P class="price">26</P>
                         </div>
                     </div>
@@ -240,7 +294,10 @@
                     <div class="card_info">
                         <p class="name">Pancakes</p>
                         <div class="priceAndLogo">
-                            <img src="Assets/images/menu_basket_icon.png" alt="Basket Icon" width="50" class="icon">
+                            <button style="background-color: white;" onclick='addToBasket("Pancakes",24, "Assets/images/Pancakes.jpg")'><img
+                                    src="Assets/images/menu_basket_icon.png" alt="Basket Icon" width="50"
+                                    class="icon"></button>
+
                             <P class="price">24</P>
                         </div>
                     </div>
@@ -251,7 +308,10 @@
                     <div class="card_info">
                         <p class="name">Waffles</p>
                         <div class="priceAndLogo">
-                            <img src="Assets/images/menu_basket_icon.png" alt="Basket Icon" width="50" class="icon">
+                            <button style="background-color: white;" onclick='addToBasket("Waffles",25, "Assets/images/Waffles.jpg")'><img
+                                    src="Assets/images/menu_basket_icon.png" alt="Basket Icon" width="50"
+                                    class="icon"></button>
+
                             <P class="price">25</P>
                         </div>
                     </div>

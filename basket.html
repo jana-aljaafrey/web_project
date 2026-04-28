@@ -28,7 +28,7 @@
                         <li><a href="contact_us.html">Contact Us</a></li>
                     </ul>
                     <a href="basket.html"><img src="Assets/images/emptyBasket.png" width="75" alt="basket_icon"
-                            class="basket_icon"></a>
+                            class="basket_icon" id="basket_icon"></a>
                 </div>
             </div>
         </nav>
@@ -41,91 +41,7 @@
         <!-- starting of the title and items part  -->
         <h1>Your Basket</h1>
 
-        <section class="cards">
-            <!--starting of first product card -->
-            <article class="card_content">
-                <div class="infos"> <!--product info-->
-                    <div class="photo"> <!--product photo-->
-                        <img src="Assets/images/Iced_Mocha.jpg" alt="Iced Mocka photo" width="150">
-                    </div>
-                    <div class="text_info"> <!--title and price-->
-                        <h3>Iced Mocka</h3>
-                        <p class="price">50</p>
-                    </div>
-                </div>
-                <div class="quantity_control"> <!--quantity control-->
-                    <div class="quantity">
-                        <img class="icon" src="Assets/images/thick_minus.png"
-                            alt="minus sign to reduce product quantity by one" width="30" height="30">
-                        <p>2</p>
-                        <img class="icon" src="Assets/images/plus.png"
-                            alt="plus sign to increase product quantity by one" width="20" height="20">
-                    </div>
-                    <div class="garbige">
-                        <img class="icon" src="Assets/images/garbige.png" alt="garbige icon for removing the item"
-                            width="40">
-                    </div>
-                </div>
-            </article>
-            <!--ending of first product card -->
-
-            <!--starting of second product card -->
-            <article class="card_content">
-                <div class="infos"> <!--product info-->
-                    <div class="photo"> <!--product photo-->
-                        <img src="Assets/images/Waffles.jpg" alt="Waffles photo" width="150">
-                    </div>
-
-
-                    <div class="text_info"> <!--title and price-->
-                        <h3>Waffles</h3>
-                        <p class="price">25</p>
-                    </div>
-                </div>
-                <div class="quantity_control"> <!--quantity control-->
-                    <div class="quantity">
-                        <img class="icon" src="Assets/images/thick_minus.png"
-                            alt="minus sign to reduce product quantity by one" width="30" height="30">
-                        <p>1</p>
-                        <img class="icon" src="Assets/images/plus.png"
-                            alt="plus sign to increase product quantity by one" width="20" height="20">
-                    </div>
-                    <div class="garbige">
-                        <img class="icon" src="Assets/images/garbige.png" alt="garbige icon for removing the item"
-                            width="40">
-                    </div>
-                </div>
-            </article>
-            <!--ending of second product card -->
-
-            <!--starting of third product card -->
-            <article class="card_content">
-                <div class="infos"> <!--product info-->
-                    <div class="photo"> <!--product photo-->
-                        <img src="Assets/images/Hot_Chocolate.jpg" alt="Hot Chocolate photo" width="150">
-                    </div>
-                    <div class="text_info"> <!--title and price-->
-                        <h3>Hot Chocolate</h3>
-                        <p class="price">22</p>
-                    </div>
-                </div>
-                <div class="quantity_control"> <!--quantity control-->
-                    <div class="quantity">
-                        <img class="icon" src="Assets/images/thick_minus.png"
-                            alt="minus sign to reduce product quantity by one" width="30" height="30">
-                        <p>1</p>
-                        <img class="icon" src="Assets/images/plus.png"
-                            alt="plus sign to increase product quantity by one" width="20" height="20">
-                    </div>
-                    <div class="garbige">
-                        <img class="icon" src="Assets/images/garbige.png" alt="garbige icon for removing the item"
-                            width="40">
-                    </div>
-                </div>
-            </article>
-            <!--ending of third product card -->
-
-        </section>
+        <section class="cards" id="cards"></section>
 
         <!-- ending of the title and items part  -->
 
@@ -133,46 +49,7 @@
 
         <!-- reservation info, date, time and comments -->
         <form class="reservation_info" id="reservation_info">
-            <h2 class="reservation_title">Reservation Info</h2>
-            <div class="reservation_box">
-
-                <label for="phoneNumber" class="small_label">Phone number:</label>
-                <div class="input_group">
-                    <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="05xxxxxxxx" inputmode="numeric"
-                        maxlength="10" required> 
-                </div>
-
-                <label for="reservation_time" class="time_label">Select Time</label>
-                <div class="input_group">
-                    <input type="time" id="reservation_time" name="reservation_time" required>
-                </div>
-
-                <label for="reservation_date" class="date_label">Select Date</label>
-                <div class="input_group">
-                    <input type="date" id="reservation_date" name="reservation_date" required min="2026-03-30">
-                </div>
-
-                <label for="reservation_comments" class="comments_label">Comments</label>
-                <div class="input_group">
-                    <textarea id="reservation_comments" name="reservation_comments"
-                        placeholder="Write your comments here..."></textarea>
-                </div>
-                <div class="branch_box">
-                    <label for="branch">Choose a branch:</label>
-
-                    <select id="branch" name="branch" required>
-                        <option disabled selected value="">Select a branch</option>
-                        <option value="dhahran">Prince Mutaib Road, Hajer District, Dhahran 34254, Saudi Arabia.
-                        </option>
-                        <option value="al_khobar">King Saud bin Abdulaziz Road, Al-Safa District, Al Khobar 34222,
-                            Saudi
-                            Arabia.</option>
-                        <option value="dammam">Abu Bakr Al-Siddiq Street, Al-Manar District, Dammam 32274, Saudi
-                            Arabia.
-                        </option>
-                    </select>
-                </div>
-            </div>
+            
         </form>
         <!-- reservation info, date, time and comments -->
 
@@ -228,7 +105,7 @@
         <p>Copyright&copy;WarmSIP</p>
     </footer>
     <!--ending of footer codes-->
-
+<script src="Assets/javascript/all.js"></script>
 </body>
 
 </html>

@@ -313,7 +313,7 @@ hr {
 
 }
 
-.section_space {
+.space {
     height: 80px;
     margin-top: -80px;
     visibility: hidden;
