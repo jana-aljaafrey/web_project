@@ -1,7 +1,8 @@
 
 // localStorage.clear()
-display();
 caculate_price()
+update_priceBox()
+display();
 
 function display() {
     let basket = JSON.parse(localStorage.getItem("items"));
@@ -16,6 +17,7 @@ function display() {
 
     if (basket.length === 0) {
         cardsSection.innerHTML = `<p class="empty">"The Basket is Empty"</p>`;
+        reservation.style.display = "none"
     } else {
         cardsSection.innerHTML = "";
         basket.forEach(item => {
@@ -99,40 +101,40 @@ function addToBasket(name, price, link) {
     }
     let isExisit = basket.find(item => item.name === name);
     let announcmect = document.getElementById("announcement");
+    let icon = document.getElementById("basket_icon");
+
+    if (announcmect) {
+        announcmect.style.opacity = "1";
+        setTimeout(function () {
+            announcmect.style.opacity = "0";
+
+        }, 2000);
+    }
+    if (icon) {
+        icon.src = "Assets/images/coffeeBasket.png";
+        setTimeout(function () {
+            icon.src = "Assets/images/emptyBasket.png";
+        }, 2000);
+
+    }
 
     if (isExisit) {
         isExisit.quantity += 1;
     } else {
-         basket.push({
-        name: name,
-        price: price,
-        quantity: 1,
-        plink: link,
-        total_price: 0
-    });
+        basket.push({
+            name: name,
+            price: price,
+            quantity: 1,
+            plink: link,
+            total_price: 0
+        });
     };
- 
+
     localStorage.setItem("items", JSON.stringify(basket));
     caculate_price();
-    // if (cardsSection && reservation) {
+    update_priceBox()
     display();
-    // }
 
-
-    document.getElementById("basket_icon").src = "Assets/images/coffeeBasket.png";
-
-    announcmect.style.opacity = "1";
-    console.log(basket);
-
-
-    setTimeout(function () {
-        document.getElementById("basket_icon").src = "Assets/images/emptyBasket.png";
-    }, 2000);
-
-    setTimeout(function () {
-        announcmect.style.opacity = "0";
-
-    }, 2000);
 
 }
 
@@ -154,6 +156,7 @@ function add_quantity(name) {
 
     localStorage.setItem("items", JSON.stringify(basket));
     caculate_price();
+    update_priceBox()
     display();
 }
 
@@ -163,7 +166,7 @@ function reduce_quantity(name) {
         basket = [];
     };
     let isExisit = basket.find(item => item.name === name);
-    if (!isExisit){
+    if (!isExisit) {
         return;
     }
     if (isExisit.quantity > 1) {
@@ -174,6 +177,7 @@ function reduce_quantity(name) {
 
     localStorage.setItem("items", JSON.stringify(basket));
     caculate_price()
+    update_priceBox()
     display();
 }
 
@@ -198,5 +202,24 @@ function remove_item(name) {
 
     localStorage.setItem("items", JSON.stringify(basket));
     caculate_price()
+    update_priceBox()
     display();
+}
+
+function update_priceBox() {
+    let basket = JSON.parse(localStorage.getItem("items"));
+    let subtotal = 0;
+    if (!Array.isArray(basket)) {
+        basket = [];
+    };
+    basket.forEach(item => {
+        subtotal += item.price * item.quantity;
+
+    })
+    let tax = Number((subtotal * 0.05).toFixed(2));
+    let total_total = subtotal + tax;
+    document.getElementById("subtotal").innerText = subtotal;
+    document.getElementById("tax").innerText = tax;
+    document.getElementById("total").innerText = total_total;
+
 }
