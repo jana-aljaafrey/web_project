@@ -1,4 +1,4 @@
-Our WarmSIP store faced several problems related to organization. When the place gets crowded,
+Our WarmSIP Coffee shop faced several problems related to organization. When the place gets crowded,
 reservations start to accumulate, which sometimes causes chaos or mistakes. Orders are also 
 delayed because of this. Therefore, we decided to create a website that allows customers to 
 reserve a table on a specific date and time, in order to organize reservation times and avoid
