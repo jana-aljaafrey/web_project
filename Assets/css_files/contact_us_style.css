@@ -28,6 +28,9 @@ p {
     background-color: #3a1f23BB;
     border-radius: 20px;
     padding: 13px;
+    background-color: #cab19b;
+    color: #3a1f23;
+    opacity: 0.98;
 }
 
 ul {
@@ -48,19 +51,17 @@ ul {
 
 button {
     border: none;
-    background-color: #3a1f23;
-    color: #cab19b;
-    padding: 17px;
+    background-color: #cab19b;
+    color: #3a1f23;
     border-radius: 15px;
-    font-size: 19px;
+    font-size: 12px;
+    border: 3px solid #3a1f23;
 }
 
 /* button on hover (about us part) */
 button:hover {
-    background-color: #7a5051;
     transform: scale(1.1);
     transition: 0.2s;
-    color: #cab19b;
 }
 
 
@@ -203,10 +204,10 @@ footer p {
     margin: 0 auto;
 }
 
-.scroll_button {
+button {
     background: #cab19b;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: #333;
+    color: #3a1f23;
     padding: 12px 25px;
     border-radius: 8px;
     text-decoration: none;
@@ -215,10 +216,6 @@ footer p {
     font-size: 18px;
 }
 
-.scroll_button:hover {
-    background: #3a1f23;
-    color: white;
-}
 
 .contact_form_section {
     padding: 50px 20px;

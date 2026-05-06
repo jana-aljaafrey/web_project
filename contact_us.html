@@ -45,7 +45,7 @@
                 or any other reason. We are honored to serve you promptly while using all our available resources. In
                 addition we value building strong relationships with you , so please don't hesitate to contact us for
                 any reason.</p>
-            <a href="#contact_form" class="scroll_button">Start your request</a>
+            <a href="#contact_form" class="scroll_button"><button>Start your request</button> </a>
         </section>
         <section class="contact_form_section" id="contact_form">
             <h2 class="section_title">Reaching Out to us:</h2>
@@ -53,11 +53,13 @@
                 <div class="fields_group">
                     <label for="user_Name" class="field_label">Full name:</label>
                     <input type="text" id="user_Name" name="user_Name" placeholder="Enter your full name..." required>
+                    <span id="fullNameMassage"></span>
                 </div>
                 <div class="fields_group">
                     <label for="phoneNumber" class="field_label">Phone number:</label>
                     <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="05xxxxxxxx" inputmode="numeric"
                         maxlength="10" required>
+                    <span id="phoneNumberMassage"></span>
                 </div>
                 <div class="fields_group">
                     <label for="serviceType" class="field_label">Type of service:</label>
@@ -78,11 +80,13 @@
                     <label for="messageTitle" class="field_label">Message title:</label>
                     <input type="text" id="messageTitle" name="messageTitle" placeholder="Enter your message title..."
                         required>
+                    <span id="titleMassage"></span>
                 </div>
                 <div class="fields_group">
                     <label for="customerMessage" class="field_label">Message content:</label>
                     <textarea id="customerMessage" name="customerMessage" placeholder="Write your message here..."
                         required></textarea>
+                    <span id="contentMassage"></span>
                 </div>
                 <button type="submit" class="send_button">Send</button>
             </form>

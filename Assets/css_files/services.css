@@ -282,11 +282,13 @@ h1 {
 h2 {
     font-size: 38px;
     font-family: "Playwrite IT Moderna", cursive;
-    background-color: #3a1f23BB;
+    background-color: #cab19b;
+    color: #3a1f23;
     margin-left: 500px;
     margin-right: 500px;
     border-radius: 25px;
     margin-bottom: 50px;
+    opacity:0.85;
 }
 
 
@@ -294,7 +296,8 @@ h2 {
 
 .overlay p {
     font-size: 22px;
-    background-color: #3a1f23BB;
+    background-color: #cab19b;
+    color: #3a1f23;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     width: 800px;
     margin: auto;
@@ -302,6 +305,7 @@ h2 {
     padding: 20px;
     border-radius: 20px;
     margin-bottom: 65px;
+    opacity:0.85;
 }
 
 hr {

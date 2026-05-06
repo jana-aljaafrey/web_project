@@ -1,5 +1,5 @@
 
-// localStorage.clear()
+
 caculate_price()
 update_priceBox()
 display();
@@ -93,7 +93,7 @@ function display() {
     console.log(cardsSection);
 };
 
-// function for changing the basket page icon when click on basket item icon (Jana)
+// function for changing the basket page icon when click on basket item icon 
 function addToBasket(name, price, link) {
     let basket = JSON.parse(localStorage.getItem("items"));
     if (!Array.isArray(basket)) {
@@ -221,5 +221,20 @@ function update_priceBox() {
     document.getElementById("subtotal").innerText = subtotal;
     document.getElementById("tax").innerText = tax;
     document.getElementById("total").innerText = total_total;
+
+}
+
+// function for full name and titel in contact us (should be letters only from 1 to 50 & shouldn't be empty)
+function check_name() {
+
+}
+// function to check phone numbers in contact us and basket (should be in this format: "05xxxxxxxx" start with 05 then andy 8 numbert)
+// it shouldn't be empty
+function check_phone() {
+
+}
+// function to check massage content in contact us and comments basket
+// it shouldn't be empty
+function check_content() {
 
 }
