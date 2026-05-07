@@ -56,7 +56,7 @@ function display() {
                 <div class="input_group">
                     <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="05xxxxxxxx" inputmode="numeric"
                         maxlength="10" required>
-                    <span id="phoneNumber"></span>
+                    <span id="phoneNumberMassage"></span>
                 </div>
 
                 <label for="reservation_time" class="time_label">Select Time</label>
@@ -73,7 +73,7 @@ function display() {
                 <div class="input_group">
                     <textarea id="reservation_comments" name="reservation_comments"
                         placeholder="Write your comments here..."></textarea>
-                    <span id="comments"></span>
+                    <span id="contentMassage"></span>
                 </div>
                 <div class="branch_box">
                     <label for="branch">Choose a branch:</label>
@@ -234,9 +234,60 @@ function check_name() {
 // it shouldn't be empty
 function check_phone() {
 
+    let phoneArea = document.getElementById("phoneNumber");
+    let userPhone = phoneArea.value.trim();
+    let phoneError = document.getElementById("phoneNumberMassage");
+
+    if (userPhone === "") {
+
+        phoneError.innerText = "Phone number is required";
+        return false;
+
+    } else if (isNaN(userPhone)) {
+
+        phoneError.innerText = "must contain numbers only";
+        return false;
+
+    } else if (!userPhone.startsWith("05")) {
+
+        phoneError.innerText = "must start with 05";
+        return false;
+
+    } else if (userPhone.length !== 10) {
+
+        phoneError.innerText = "must be 10 digits";
+        return false;
+
+    } else {
+        phoneError.innerText = "";
+        return true;
+    }
 }
 // function to check massage content in contact us and comments basket
 // it shouldn't be empty
 function check_content() {
 
+    let messageArea =
+        document.getElementById("customerMessage") || document.getElementById("reservation_comments");
+
+    let userMessage = messageArea.value.trim();
+    let messageError = document.getElementById("contentMassage");
+
+    if (userMessage === "") {
+
+        messageError.innerText = "Message content is required";
+        return false;
+    }
+
+    let textWords = userMessage.split(/\s+/);
+
+    if (textWords.length > 250) {
+
+        messageError.innerText = "must not exceed 250 words";
+        return false;
+
+    } else {
+        messageError.innerText = "";
+        return true;
+    }
 }

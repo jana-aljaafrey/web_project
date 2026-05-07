@@ -46,7 +46,6 @@
         <!-- ending of the title and items part  -->
         <hr class="breaker">
 
-
         <!-- reservation info, date, time and comments -->
         <form class="reservation_info" id="reservation_info">
             
@@ -78,7 +77,7 @@
 
 
         <!-- starting pay button  -->
-        <button type="submit" form="reservation_info">Pay Now</button>
+        <button type="submit" form="reservation_info" onclick="return check_phone() && check_content()">Pay Now</button>
         <!-- ending pay button  -->
 
     </main>
