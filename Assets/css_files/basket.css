@@ -383,6 +383,14 @@ select {
     resize: none;
 }
 
+#phoneNumberMassage,
+#contentMassage {
+    color: red;
+    font-size: 15px;
+    display: block;
+    margin-top: 2px;
+    margin-left: 8px;
+}
 /* <!-- reservation info, date, time and comments  --> */
 
 

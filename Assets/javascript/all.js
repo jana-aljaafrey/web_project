@@ -240,7 +240,7 @@ function check_phone() {
 
     if (userPhone === "") {
 
-        phoneError.innerText = "Phone number is required";
+        phoneError.innerText = "required";
         return false;
 
     } else if (isNaN(userPhone)) {
@@ -255,7 +255,7 @@ function check_phone() {
 
     } else if (userPhone.length !== 10) {
 
-        phoneError.innerText = "must be 10 digits";
+        phoneError.innerText = "must contain 10 numbers";
         return false;
 
     } else {
@@ -275,7 +275,7 @@ function check_content() {
 
     if (userMessage === "") {
 
-        messageError.innerText = "Message content is required";
+        messageError.innerText = "required";
         return false;
     }
 
