@@ -56,6 +56,7 @@ function display() {
                 <div class="input_group">
                     <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="05xxxxxxxx" inputmode="numeric"
                         maxlength="10" required>
+                    <span id="phoneNumber"></span>
                 </div>
 
                 <label for="reservation_time" class="time_label">Select Time</label>
@@ -72,6 +73,7 @@ function display() {
                 <div class="input_group">
                     <textarea id="reservation_comments" name="reservation_comments"
                         placeholder="Write your comments here..."></textarea>
+                    <span id="comments"></span>
                 </div>
                 <div class="branch_box">
                     <label for="branch">Choose a branch:</label>
@@ -224,7 +226,7 @@ function update_priceBox() {
 
 }
 
-// function for full name and titel in contact us (should be letters only from 1 to 50 & shouldn't be empty)
+// function for full name and titel in contact us (should be letters only from 1 to 50 and don't contain numbers& shouldn't be empty)
 function check_name() {
 
 }
