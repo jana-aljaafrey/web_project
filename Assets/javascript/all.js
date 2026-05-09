@@ -240,7 +240,7 @@ function check_phone() {
 
     if (userPhone === "") {
 
-        phoneError.innerText = "required";
+        phoneError.innerText = "please enter a phone number";
         return false;
 
     } else if (isNaN(userPhone)) {
@@ -264,7 +264,7 @@ function check_phone() {
     }
 }
 // function to check massage content in contact us and comments basket
-// it shouldn't be empty
+// customerMessage should not be empty
 function check_content() {
 
     let messageArea =
@@ -275,9 +275,15 @@ function check_content() {
 
     if (userMessage === "") {
 
-        messageError.innerText = "required";
-        return false;
+    if (messageArea.id === "reservation_comments") {
+
+        messageError.innerText = "";
+        return true;
     }
+
+    messageError.innerText = "please enter a message";
+    return false;
+}
 
     let textWords = userMessage.split(/\s+/);
 
