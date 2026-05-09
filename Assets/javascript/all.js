@@ -291,3 +291,21 @@ function check_content() {
         return true;
     }
 }
+
+function saveOrderForm() {
+
+    let basket = JSON.parse(localStorage.getItem("items"));
+
+    let orderForm = {
+        phone: document.getElementById("phoneNumber").value,
+        time: document.getElementById("reservation_time").value,
+        date: document.getElementById("reservation_date").value,
+        comments: document.getElementById("reservation_comments").value,
+        branch: document.getElementById("branch").value,
+        items: basket
+    };
+
+    localStorage.setItem("orderForm", JSON.stringify(orderForm));
+
+    return true;
+}
