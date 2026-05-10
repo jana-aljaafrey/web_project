@@ -256,6 +256,7 @@ select {
     border-radius: 8px;
     outline: none;
     font-family: 'Poppins', sans-serif;
+    resize: none;
 }
 
 input:focus,

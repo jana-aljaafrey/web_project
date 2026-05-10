@@ -238,37 +238,27 @@ function check_name() {
 // it shouldn't be empty
 function check_phone() {
 
-    let phoneArea = document.getElementById("phoneNumber");
+    let userPhone = document.getElementById("phoneNumber").value;
+    let phoneError = document.getElementById("phoneNumberMassage");
 
+    let phonePattern = /^05\d{8}$/;
 
-    if (!phoneArea) {
+    if (userPhone.trim() === "") {
+
+        phoneError.innerText = "Phone number cannot be empty";
         return false;
     }
 
-    let userPhone = phoneArea.value.trim();
-    let phoneError = document.getElementById("phoneNumberMassage");
+    else if (!phonePattern.test(userPhone)) {
 
-    if (userPhone === "") {
+        phoneError.innerText =
+            "Phone number must start with 05 and contain 10 digits only";
 
-        phoneError.innerText = "please enter a phone number";
         return false;
+    }
 
-    } else if (isNaN(userPhone)) {
+    else {
 
-        phoneError.innerText = "must contain numbers only";
-        return false;
-
-    } else if (!userPhone.startsWith("05")) {
-
-        phoneError.innerText = "must start with 05";
-        return false;
-
-    } else if (userPhone.length !== 10) {
-
-        phoneError.innerText = "must contain 10 numbers";
-        return false;
-
-    } else {
         phoneError.innerText = "";
         return true;
     }
@@ -296,7 +286,7 @@ function check_content() {
             return true;
         }
 
-        messageError.innerText = "please enter a message";
+        messageError.innerText = "Message content cannot be empty";
         return false;
     }
 
