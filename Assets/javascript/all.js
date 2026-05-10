@@ -1,5 +1,5 @@
 
-
+// localStorage.clear()
 caculate_price()
 update_priceBox()
 display();
@@ -20,7 +20,7 @@ function display() {
         if (reservation) {
             reservation.style.display = "none"
         }
- 
+
     } else {
         cardsSection.innerHTML = "";
         basket.forEach(item => {
@@ -101,6 +101,7 @@ function display() {
 // function for changing the basket page icon when click on basket item icon 
 function addToBasket(name, price, link) {
     let basket = JSON.parse(localStorage.getItem("items"));
+    document.getElementById('announ').innerText = ''
     if (!Array.isArray(basket)) {
         basket = [];
     }
@@ -177,7 +178,7 @@ function reduce_quantity(name) {
     if (isExisit.quantity > 1) {
         isExisit.quantity -= 1;
     } else {
-        basket = basket.filter(item => item.name !== name);
+        quantity === 1
     }
 
     localStorage.setItem("items", JSON.stringify(basket));
@@ -238,6 +239,12 @@ function check_name() {
 function check_phone() {
 
     let phoneArea = document.getElementById("phoneNumber");
+
+
+    if (!phoneArea) {
+        return false;
+    }
+
     let userPhone = phoneArea.value.trim();
     let phoneError = document.getElementById("phoneNumberMassage");
 
@@ -273,20 +280,25 @@ function check_content() {
     let messageArea =
         document.getElementById("customerMessage") || document.getElementById("reservation_comments");
 
+
+    if (!messageArea) {
+        return false;
+    }
+
     let userMessage = messageArea.value.trim();
     let messageError = document.getElementById("contentMassage");
 
     if (userMessage === "") {
 
-    if (messageArea.id === "reservation_comments") {
+        if (messageArea.id === "reservation_comments") {
 
-        messageError.innerText = "";
-        return true;
+            messageError.innerText = "";
+            return true;
+        }
+
+        messageError.innerText = "please enter a message";
+        return false;
     }
-
-    messageError.innerText = "please enter a message";
-    return false;
-}
 
     let textWords = userMessage.split(/\s+/);
 
@@ -319,14 +331,24 @@ function saveOrderForm() {
     return true;
 }
 
-function check_basket(){
+function check_basket() {
     let basket = JSON.parse(localStorage.getItem("items"));
+    console.log('this is the basket:', basket)
     if (!Array.isArray(basket)) {
         basket = [];
     }
-    if (basket.length === 0){
+    if (basket.length === 0) {
         document.getElementById('announ').innerText = 'You must add one or more products to reserve'
+        return false
     }
+    return true;
 }
 
-check_basket()
+function handleBasket() {
+        let x = check_phone();
+        let y = check_content(); 
+        let z = check_basket(); 
+        if  (x  && y && z ) {
+            saveOrderForm();
+        }
+}
