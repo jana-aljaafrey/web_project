@@ -77,8 +77,9 @@
 
 
         <!-- starting pay button  -->
-        <button type="submit" form="reservation_info" onclick="return check_phone() && check_content() && saveOrderForm()">Pay Now</button>
+        <button type="submit" form="reservation_info" onclick='check_phone(); check_content(); saveOrderForm(); check_basket()'>Reserve Now</button>
         <!-- ending pay button  -->
+         <span id="announ" style="color:brown; justify-content: center; display: flex; font-size: 20px; margin-bottom: 40px;margin-top: -50px; font-family: Arial, Helvetica, sans-serif;"></span>
 
     </main>
     <!-- ending of main codes -->

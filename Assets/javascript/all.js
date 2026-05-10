@@ -17,7 +17,10 @@ function display() {
 
     if (basket.length === 0) {
         cardsSection.innerHTML = `<p class="empty">"The Basket is Empty"</p>`;
-        reservation.style.display = "none"
+        if (reservation) {
+            reservation.style.display = "none"
+        }
+ 
     } else {
         cardsSection.innerHTML = "";
         basket.forEach(item => {
@@ -315,3 +318,15 @@ function saveOrderForm() {
 
     return true;
 }
+
+function check_basket(){
+    let basket = JSON.parse(localStorage.getItem("items"));
+    if (!Array.isArray(basket)) {
+        basket = [];
+    }
+    if (basket.length === 0){
+        document.getElementById('announ').innerText = 'You must add one or more products to reserve'
+    }
+}
+
+check_basket()
