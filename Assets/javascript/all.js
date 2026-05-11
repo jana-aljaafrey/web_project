@@ -216,7 +216,7 @@ function update_priceBox() {
     taxPart = document.getElementById("tax");
     totalPart = document.getElementById("total");
 
-    if (!subtotalPart || !taxPart || totalPart) {
+    if (!subtotalPart || !taxPart || !totalPart) {
         return;
     }
 
