@@ -241,7 +241,45 @@ function update_priceBox() {
 // function for full name and titel in contact us (should be letters only from 1 to 50 and don't contain numbers& shouldn't be empty)
 function check_name() {
 
+    let full_name= document.getElementById("user_Name").value;
+    let name_message= document.getElementById("fullNameMassage");
+    let name_pattern= /^[A-Za-z\s]{1,50}$/;
+
+    let title_message= document.getElementById("messageTitle");
+    let message= document.getElementById("titleMassage");
+    let message_pattern= /^[A-Za-z\s]{1,50}$/;
+
+    if (full_name.trim()==="") {
+        name_message.innerText="Full name cannot be empty.";
+        return false;  
+    }
+
+    else if (!name_pattern.test(full_name)) {
+        name_message.innerText= "Full name must be letters only , from 1 to 50 characters.";
+        return false;
+    }
+
+    else{
+        name_message.innerText="";
+    }
+
+    // message title 
+    if (title_message.trim()==="") {
+        message.innerText="Message title cannot be empty.";
+        return false;
+    }
+
+    else if (!message_pattern.test(title_message)) {
+        message.innerText= "Message title must be letters only , from 1 to 50 characters.";
+        return false;
+    }
+
+    else {
+        message.innerText= "";
+        return true;
+    }
 }
+
 // function to check phone numbers in contact us and basket (should be in this format: "05xxxxxxxx" start with 05 then andy 8 numbert)
 // it shouldn't be empty
 function check_phone() {
