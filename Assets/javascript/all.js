@@ -376,12 +376,12 @@ function saveOrderForm() {
     let basket = JSON.parse(localStorage.getItem("items"));
 
     let orderForm = {
-        phone: document.getElementById("phoneNumber").value,
-        time: document.getElementById("reservation_time").value,
-        date: document.getElementById("reservation_date").value,
-        comments: document.getElementById("reservation_comments").value,
-        branch: document.getElementById("branch").value,
-        items: basket
+        'phone': document.getElementById("phoneNumber").value,
+        'time': document.getElementById("reservation_time").value,
+        'date': document.getElementById("reservation_date").value,
+        'comments': document.getElementById("reservation_comments").value,
+        'branch': document.getElementById("branch").value,
+        'items': basket
     };
 
     localStorage.setItem("orderForm", JSON.stringify(orderForm));
@@ -440,6 +440,19 @@ function resInfo() {
     return checking;
 }
 
+function contactForm() {
+    let contactform = {
+        'full name': document.getElementById('user_Name').value,
+        'phone': document.getElementById("phoneNumber").value,
+        'service type': document.getElementById("serviceType").value,
+        'title': document.getElementById("messageTitle").value,
+        'message': document.getElementById("customerMessage").value,
+    };
+
+    localStorage.setItem("contactform", JSON.stringify(contactform));
+
+    return true;
+}
 
 function handleBasket() {
     let announ = document.getElementById('announ')
@@ -449,15 +462,19 @@ function handleBasket() {
     let r = resInfo()
     if (x && y && z && r) {
         saveOrderForm();
+        announ.innerHTML = 'Your reservation has been completed successfully'
     } else {
         announ.innerText = 'You had enter invalid input in Reservation Info part'
     }
 }
 function handleContact() {
+    let announ = document.getElementById('notice')
     let x = check_phone();
     let y = check_content();
     let z = check_name();
     if (x && y && z) {
-        saveOrderForm();
+        contactForm();
+        announ.innerText = 'Sent successfully, we will contact you as soon as possible'
+        
     }
 }
