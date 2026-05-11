@@ -252,7 +252,7 @@ function check_phone() {
     else if (!phonePattern.test(userPhone)) {
 
         phoneError.innerText =
-            "Phone number must start with 05 and contain 10 digits only";
+            "Phone number must start with 05 and contain 10 numbers only";
 
         return false;
     }
