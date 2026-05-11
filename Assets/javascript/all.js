@@ -101,7 +101,6 @@ function display() {
 // function for changing the basket page icon when click on basket item icon 
 function addToBasket(name, price, link) {
     let basket = JSON.parse(localStorage.getItem("items"));
-    document.getElementById('announ').innerText = ''
     if (!Array.isArray(basket)) {
         basket = [];
     }
@@ -178,7 +177,7 @@ function reduce_quantity(name) {
     if (isExisit.quantity > 1) {
         isExisit.quantity -= 1;
     } else {
-        quantity === 1
+        basket = basket.filter(item => item.name !== name);
     }
 
     localStorage.setItem("items", JSON.stringify(basket));
@@ -213,7 +212,16 @@ function remove_item(name) {
 }
 
 function update_priceBox() {
+    subtotalPart =  document.getElementById("subtotal");
+    taxPart = document.getElementById("tax");
+    totalPart = document.getElementById("total");
+
+    if (!subtotalPart || !taxPart || totalPart) {
+        return;
+    }
+
     let basket = JSON.parse(localStorage.getItem("items"));
+
     let subtotal = 0;
     if (!Array.isArray(basket)) {
         basket = [];
@@ -323,12 +331,17 @@ function saveOrderForm() {
 
 function check_basket() {
     let basket = JSON.parse(localStorage.getItem("items"));
+    let announ = document.getElementById('announ');
+    if (announ) {
+        announ.innerText = ''
+ 
+    }
     console.log('this is the basket:', basket)
     if (!Array.isArray(basket)) {
         basket = [];
     }
     if (basket.length === 0) {
-        document.getElementById('announ').innerText = 'You must add one or more products to reserve'
+        announ.innerText = 'You must add one or more products to reserve'
         return false
     }
     return true;
