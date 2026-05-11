@@ -65,7 +65,7 @@
                     <label for="serviceType" class="field_label">Type of service:</label>
                     <div class="Select_service">
                         <select id="serviceType" name="serviceType" required>
-                            <option value="">Select service</option>
+                            <option value="" disabled selected>Select service</option>
                             <option>Request a Party</option>
                             <option>Customise Order</option>
                             <option>Complaint</option>
@@ -88,7 +88,7 @@
                         required></textarea>
                     <span id="contentMassage"></span>
                 </div>
-                <button type="submit" class="send_button" onclick="check_name() ; check_phone() ; check_content()">Send</button>
+                <button type="submit" class="send_button" onclick="handleContact()">Send</button>
             </form>
         </section>
     </main>
@@ -112,7 +112,7 @@
                             src="Assets/images/emailIcon.png" alt="Email Icon" width="50" class="inst"></a></li>
             </ul>
         </div>
-        <p>Copyright&copy;WarmSIP</p>
+        <p style="background: none;">Copyright&copy;WarmSIP</p>
     </footer>
     <!--ending of footer codes-->
 

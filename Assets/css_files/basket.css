@@ -36,6 +36,11 @@ ul {
     list-style: none;
 }
 
+span {
+    color: red;
+    margin-top: 30px;
+}
+
 hr {
     border: none;
     background-color: #3a1f23;

@@ -65,14 +65,16 @@ function display() {
                 <label for="reservation_time" class="time_label">Select Time</label>
                 <div class="input_group">
                     <input type="time" id="reservation_time" name="reservation_time" required>
+                    <span id="timeSpan"></span>
                 </div>
 
                 <label for="reservation_date" class="date_label">Select Date</label>
                 <div class="input_group">
                     <input type="date" id="reservation_date" name="reservation_date" required min="2026-03-30">
+                    <span id="dateSpan"></span>
                 </div>
 
-                <label for="reservation_comments" class="comments_label">Comments</label>
+                <label for="reservation_comments" class="comments_label" required>Comments</label>
                 <div class="input_group">
                     <textarea id="reservation_comments" name="reservation_comments"
                         placeholder="Write your comments here..."></textarea>
@@ -92,10 +94,10 @@ function display() {
                             Arabia.
                         </option>
                     </select>
+                    <span id="branchSpan"></span>
                 </div>
             </div>`
     };
-    console.log(cardsSection);
 };
 
 // function for changing the basket page icon when click on basket item icon 
@@ -212,7 +214,7 @@ function remove_item(name) {
 }
 
 function update_priceBox() {
-    subtotalPart =  document.getElementById("subtotal");
+    subtotalPart = document.getElementById("subtotal");
     taxPart = document.getElementById("tax");
     totalPart = document.getElementById("total");
 
@@ -241,43 +243,63 @@ function update_priceBox() {
 // function for full name and titel in contact us (should be letters only from 1 to 50 and don't contain numbers& shouldn't be empty)
 function check_name() {
 
-    let full_name= document.getElementById("user_Name").value;
-    let name_message= document.getElementById("fullNameMassage");
-    let name_pattern= /^[A-Za-z\s]{1,50}$/;
+    let full_name = document.getElementById("user_Name").value;
+    let name_message = document.getElementById("fullNameMassage");
+    let name_pattern = /^[A-Za-z\s]{1,50}$/;
 
-    let title_message= document.getElementById("messageTitle");
-    let message= document.getElementById("titleMassage");
-    let message_pattern= /^[A-Za-z\s]{1,50}$/;
-
-    if (full_name.trim()==="") {
-        name_message.innerText="Full name cannot be empty.";
-        return false;  
-    }
-
-    else if (!name_pattern.test(full_name)) {
-        name_message.innerText= "Full name must be letters only , from 1 to 50 characters.";
-        return false;
-    }
-
-    else{
-        name_message.innerText="";
-    }
+    let title_message = document.getElementById("messageTitle").value;
+    let message = document.getElementById("titleMassage");
+    let message_pattern = /^[A-Za-z\s]{1,50}$/;
 
     // message title 
-    if (title_message.trim()==="") {
-        message.innerText="Message title cannot be empty.";
+    if (title_message.trim() === "" && full_name.trim() === "") {
+        message.innerText = "Message title cannot be empty.";
+        name_message.innerText = "Full name cannot be empty.";
         return false;
     }
 
-    else if (!message_pattern.test(title_message)) {
-        message.innerText= "Message title must be letters only , from 1 to 50 characters.";
+    else if (!message_pattern.test(title_message) && !name_pattern.test(full_name)) {
+        message.innerText = "Message title must be letters only , from 1 to 50 characters.";
+        name_message.innerText = "Full name must be letters only , from 1 to 50 characters.";
         return false;
     }
 
     else {
-        message.innerText= "";
+        message.innerText = "";
+    }
+
+
+    if (full_name.trim() === "") {
+        name_message.innerText = "Full name cannot be empty.";
+        return false;
+    }
+
+    else if (!name_pattern.test(full_name)) {
+        name_message.innerText = "Full name must be letters only , from 1 to 50 characters.";
+        return false;
+    }
+
+    else {
+        name_message.innerText = "";
+    }
+
+    // message title 
+    if (title_message.trim() === "") {
+        message.innerText = "Message title cannot be empty.";
+        return false;
+    }
+
+    else if (!message_pattern.test(title_message)) {
+        message.innerText = "Message title must be letters only , from 1 to 50 characters.";
+        return false;
+    }
+
+    else {
+        message.innerText = "";
         return true;
     }
+
+
 }
 
 // function to check phone numbers in contact us and basket (should be in this format: "05xxxxxxxx" start with 05 then andy 8 numbert)
@@ -372,7 +394,7 @@ function check_basket() {
     let announ = document.getElementById('announ');
     if (announ) {
         announ.innerText = ''
- 
+
     }
     console.log('this is the basket:', basket)
     if (!Array.isArray(basket)) {
@@ -385,11 +407,57 @@ function check_basket() {
     return true;
 }
 
+function resInfo() {
+    let date = document.getElementById('reservation_date').value;
+    let time = document.getElementById('reservation_time').value;
+    let branch = document.getElementById('branch').value;
+
+    let timeSpan = document.getElementById('timeSpan');
+    let dateSpan = document.getElementById('dateSpan');
+    let branchSpan = document.getElementById('branchSpan');
+
+    let checking = true
+
+    if (date.trim("") === "") {
+        dateSpan.innerText = 'Please choose your reservation date';
+       checking = false;
+    } else {
+        dateSpan.innerText = '';
+    }
+    if (time.trim("") === "") {
+        timeSpan.innerText = 'Please choose your reservation time';
+       checking = false;
+    } else {
+        timeSpan.innerText = '';
+    }
+    if (branch.trim("") === '') {
+        branchSpan.innerHTML = '<br>Please choose the branch you want to make a reserbation at';
+       checking = false;
+    } else {
+        branchSpan.innerText = '';
+    }
+    console.log('saved')
+    return checking;
+}
+
+
 function handleBasket() {
-        let x = check_phone();
-        let y = check_content(); 
-        let z = check_basket(); 
-        if  (x  && y && z ) {
-            saveOrderForm();
-        }
+    let announ = document.getElementById('announ')
+    let x = check_phone();
+    let y = check_content();
+    let z = check_basket();
+    let r = resInfo()
+    if (x && y && z && r) {
+        saveOrderForm();
+    } else {
+        announ.innerText = 'You had enter invalid input in Reservation Info part'
+    }
+}
+function handleContact() {
+    let x = check_phone();
+    let y = check_content();
+    let z = check_name();
+    if (x && y && z) {
+        saveOrderForm();
+    }
 }
